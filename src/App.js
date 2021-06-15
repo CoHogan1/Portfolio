@@ -1,19 +1,89 @@
 import './App.css';
+import React, { Component } from 'react'
 import Navigation from './nav'
-import Resume from './resume'
+import About from './me.js'
+import color from './color.png'
+
+class App extends Component{
+    constructor(props){
+        super(props)
+        this.state = {
+            me: true,
+            p1: color,
+            p2: '',
+            p3: '',
+            p4: '',
+
+        }
+    }
 
 
 
-function App() {
-  return (
-    <div className="App">
-        <h1>Hello</h1>
-        <Navigation />
-        <Resume />
 
+    render(){
+        return (
+            <div className="App">
+            <div className="spacer"></div>
+            <About/>
+            <Navigation />
 
-    </div>
-  );
+                <div className="project">
+                    <div className="proPic"><img src={this.state.p1}></img></div>
+                    <h1>Guess The Color</h1>
+                    <p>This project is a two player game where you have two seconds
+                    to select the appropiate color from the 6 choice boxes. Every
+                    turn the color name stays the same. However the background, the
+                    border, the font color also change.</p>
+                    <div>Tools: HTML5 CSS Javascript</div>
+
+                </div>
+                <div className="project">
+                    <div className="proPic">Pic of project</div>
+                    <h1>Brain Defogger</h1>
+                    <p>This project I wanted to focus on user experience. The app is
+                    full crud. However the styling take all the attention. I used a
+                    variety of blues and green to help the user keep a calmer level
+                    of emotions. All the backgrounds are a peaceful .gif of nature.
+                    The button colors are based on stop light. Green for submission,
+                    yellow for editing, and red for deletion and logging out. One other
+                    part of my design was to keep the movement of the mouse to a minimum.
+                    Throughout debugging the mouse moves very little. I designed this with
+                    a stressed out person in mind.</p>
+                    <div>Tools: Node, MongoDB, HTML5, Javascript</div>
+
+                </div>
+                <div className="project">
+                    <div className="proPic">Pic of project</div>
+                    <h1>Travel Assistant</h1>
+                    <p>This was a group project. I was assigned the leader of this project.
+                    This presented a new set of problems for me. We, the team, got together
+                    and alligned our focus on this travel app.This app takes a vacation from
+                    the user input and returns restruants, and weather uppon the desired
+                    vacation dates. The app is full crud, and used multiple Apis. I was
+                    responcible for the main code layout. I designed it in a way that each
+                    teamate could work on their own file without having to touch anyone elses.
+                    The main idea of this was to eliminate git issues.</p>
+                    <div>Tools: Node, MongoDB, React, Javascript, Multiple Apis</div>
+
+                </div>
+                <div className="project">
+                    <div className="proPic">Pic of project</div>
+                    <h1>Multiplayer Checkers</h1>
+                    <p>This app will allow you to play a game of checkers with a friend.
+                    this app will also allow you to chat with your opponent at the same
+                    time. Using socket-io for the first time presented a big challange. In
+                    addition to the new technology, I wanted more practice with Flask, and
+                    Python3. This combination only led to road blocks. I do not recommend
+                    this mix of languages. However I gained the knowledge I was looking for
+                    and I am already planning out my next big project.
+                    </p>
+                    <div>Tools: Flask, Python3, mysql, Javascript, React, Socket-io</div>
+
+                </div>
+
+            </div>
+        )
+    }
 }
 
 export default App;

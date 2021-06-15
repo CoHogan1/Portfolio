@@ -5,6 +5,48 @@
   background-image: url('background.png');
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: scroll;
+}
+
+.spacer {
+    height: 120px;
+}
+
+.about {
+    border-radius: 20px;
+    background-color: black;
+    width: 380px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.pic {
+    height: 140px;
+    width:130px;
+    border-radius: 30px;
+    border: 1px solid blue;
+    margin-top: 30px;
+}
+.pic:hover  {
+    height: 200px;
+    width: 190px;
+}
+
+.inner > p {
+    padding:0;
+    margin: 0;
+    font-size: 20px;
+}
+
+.picHead {
+    height: 200px;
+    margin-bottom: 0;
+    margin:0;
+}
+
+.inner {
+    background-color: white;
+
 }
 
 .nav {
@@ -14,9 +56,44 @@
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: rgba(100,100,100, 0.5); /* Black*/
+    background-color: rgba(20,20,20, 0.7); /* Black*/
     color:white;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    border-right: 2px solid black;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: red;
+    font-size: 20px;
+}
+p:hover {
+    color:red;
+}
+
+.project {
+    margin: auto;
+    margin-top: 40px;
+    background-color: rgba(250,250,250, 0.9);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 600px;
+}
+
+.proPic {
+    background-color: rgba(150,150,150, 0.9);
+}
+.proPic > img {
+    height: 200px;
+    width: 200px;
+}
+
+.proPic > img:hover{
+    height:300px;
+    width:300px;
 }

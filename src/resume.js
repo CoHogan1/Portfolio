@@ -1,3 +1,4 @@
+import './App.css';
 import React, { Component } from 'react'
 
 export default class Resume extends Component {
@@ -11,7 +12,8 @@ export default class Resume extends Component {
     render(){
         return(
             <div>
-            <h1> Hereyou go </h1>
+
+            <h1>Resume goes here</h1>
 
 
             </div>
