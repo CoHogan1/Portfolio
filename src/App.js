@@ -2,7 +2,10 @@ import './App.css';
 import React, { Component } from 'react'
 import Navigation from './nav'
 import About from './me.js'
-import color from './color.png'
+import color from './color_2.png'
+import brain from './brain_defogger.png'
+import vaca from './vacation.png'
+import checkers from './checkers.png'
 
 class App extends Component{
     constructor(props){
@@ -10,9 +13,9 @@ class App extends Component{
         this.state = {
             me: true,
             p1: color,
-            p2: '',
-            p3: '',
-            p4: '',
+            p2: brain,
+            p3: vaca,
+            p4: checkers,
 
         }
     }
@@ -38,22 +41,16 @@ class App extends Component{
 
                 </div>
                 <div className="project">
-                    <div className="proPic">Pic of project</div>
+                    <div className="proPic"><img src={this.state.p2}></img></div>
                     <h1>Brain Defogger</h1>
-                    <p>This project I wanted to focus on user experience. The app is
-                    full crud. However the styling take all the attention. I used a
-                    variety of blues and green to help the user keep a calmer level
-                    of emotions. All the backgrounds are a peaceful .gif of nature.
-                    The button colors are based on stop light. Green for submission,
-                    yellow for editing, and red for deletion and logging out. One other
-                    part of my design was to keep the movement of the mouse to a minimum.
-                    Throughout debugging the mouse moves very little. I designed this with
-                    a stressed out person in mind.</p>
+                    <p>We all feel the afects of brain fog, and this app allows you to keep track of various methods that
+                    allow you to clear your mind after a full day of school, or
+                    meetings.</p>
                     <div>Tools: Node, MongoDB, HTML5, Javascript</div>
 
                 </div>
                 <div className="project">
-                    <div className="proPic">Pic of project</div>
+                    <div className="proPic"><img src={this.state.p3}></img></div>
                     <h1>Travel Assistant</h1>
                     <p>This was a group project. I was assigned the leader of this project.
                     This presented a new set of problems for me. We, the team, got together
@@ -67,7 +64,7 @@ class App extends Component{
 
                 </div>
                 <div className="project">
-                    <div className="proPic">Pic of project</div>
+                    <div className="proPic"><img src={this.state.p4}></img></div>
                     <h1>Multiplayer Checkers</h1>
                     <p>This app will allow you to play a game of checkers with a friend.
                     this app will also allow you to chat with your opponent at the same
