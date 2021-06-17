@@ -14,6 +14,9 @@ import html from './html5.png'
 import exp from './exp.png'
 import socket from './socket.png'
 
+import taco from './taco.png'
+import pie from './pie.png'
+
 export default class About extends Component {
     constructor(props){
         super(props)
@@ -31,6 +34,8 @@ export default class About extends Component {
             html: html,
             soc: socket,
             ex: exp,
+            taco: taco,
+            pie: pie,
         }
     }
 
@@ -43,14 +48,8 @@ export default class About extends Component {
                 <div className="inner">
                     <br></br>
                     <h1>Software Developer</h1>
-                    <p>Skills</p>
-                    <p>Java-Script</p>
-                    <p>Python3</p>
-                    <p>React</p>
-                    <p>jQuery</p>
-                    <p>Flask</p>
-                    <p>SQL</p>
-                    <p>MongoDB</p>
+                    <h3>Skills</h3>
+                    <p>JavaScript Father Python3 React jQuery<br></br> Flask SQL MongoDB Categorizing Cooking Tacos</p>
                     <br></br>
                     <div>
                         <img className="skills" src={this.state.html}></img>
@@ -59,13 +58,15 @@ export default class About extends Component {
                         <img className="skills" src={this.state.py}></img>
                         <img className="skills" src={this.state.no}></img>
                         <img className="skills" src={this.state.re}></img>
-                        <br></br>
                         <img className="skills" src={this.state.fl}></img>
+                        <br></br>
                         <img className="skills" src={this.state.mD}></img>
+                        <img className="skills" src={this.state.pie}></img>
                         <img className="skills" src={this.state.sq}></img>
                         <img className="skills" src={this.state.jq}></img>
                         <img className="skills" src={this.state.ex}></img>
                         <img className="skills" src={this.state.soc}></img>
+                        <img className="skills" src={this.state.taco}></img>
                     </div>
                 </div>
             </div>
