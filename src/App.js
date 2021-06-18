@@ -79,8 +79,21 @@ class App extends Component{
             <div className="App">
             <div className="cool">
             <div className="spacer"></div>
+
             <About/>
             <Navigation />
+
+                <div className="right" >
+                    <div className="rbar">
+                    <img src={this.state.ga}></img>
+                    <img src={this.state.pyc}></img>
+                    <img src={this.state.jsc}></img>
+                    <img src={this.state.jqc}></img>
+                    <img src={this.state.cssc}></img>
+                    <img src={this.state.htmlc}></img>
+                    <p>More skills Pending.....</p>
+                    </div>
+                </div>
 
                 <div className="project">
                     <div className="proPic"><img src={this.state.p1}></img><img src={this.state.p12}></img></div>
@@ -158,18 +171,6 @@ class App extends Component{
                     </div>
                 </div>
 
-                <div className="right" >
-                    <div className="rbar">
-                    <img src={this.state.ga}></img>
-                    <img src={this.state.pyc}></img>
-                    <img src={this.state.jsc}></img>
-                    <img src={this.state.jqc}></img>
-                    <img src={this.state.cssc}></img>
-                    <img src={this.state.htmlc}></img>
-                    <p>More skills Pending.....</p>
-                    </div>
-
-                </div>
 
                 <div className="footer">Currently Job Hhunting :)
 
