@@ -1,38 +1,38 @@
 import './App.css';
 import React, { Component } from 'react'
-import Navigation from './nav'
+import Navigation  from './nav'
 //1st project backround
-import About from './me.js'
-import color from './color.png'
-import brain from './brain_defogger.png'
-import vaca from './vacation.png'
+import About    from './me.js'
+import color    from './color.png'
+import brain    from './brain_defogger.png'
+import vaca     from './vacation.png'
 import checkers from './checkers.png'
 // 2nd project background
-import col2 from './color_2.png'
-import darkB from './dark-brain.png'
-import vac2 from './vaca-2.png'
-import darkC from './dark-checkers.png'
+import col2     from './color_2.png'
+import darkB    from './dark-brain.png'
+import vac2     from './vaca-2.png'
+import darkC    from './dark-checkers.png'
 // tools
-import css from './css-logo.png'
-import html from './html5.png'
-import js from './js-logo.png'
-import python from './python-logo.png'
-import jquery from './jquery-logo.png'
-import react from './react-logo.png'
-import node from './node-logo.png'
-import flask from './flask-logo.png'
-import mongoDB from './mongo-logo.png'
-import sql from './post-sql-logo.png'
-import api from './api.png'
-import exp from './exp.png'
-import socket from './socket.png'
-import taco from './taco.png'
+import css      from './css-logo.png'
+import html     from './html5.png'
+import js       from './js-logo.png'
+import python   from './python-logo.png'
+import jquery   from './jquery-logo.png'
+import react    from './react-logo.png'
+import node     from './node-logo.png'
+import flask    from './flask-logo.png'
+import mongoDB  from './mongo-logo.png'
+import sql      from './post-sql-logo.png'
+import api      from './api.png'
+import exp      from './exp.png'
+import socket   from './socket.png'
+import taco     from './taco.png'
 // skills
-import GA from './GA.png'
-import pyc from './python3c.png'
-import jsc from './jsc.png'
-import jqc from './jqc.png'
-import cssc from './cssc.png'
+import GA    from './GA.png'
+import pyc   from './python3c.png'
+import jsc   from './jsc.png'
+import jqc   from './jqc.png'
+import cssc  from './cssc.png'
 import htmlc from './htmlc.png'
 
 class App extends Component{
@@ -70,8 +70,6 @@ class App extends Component{
             ga: GA,
         }
     }
-
-
 
 
     render(){
