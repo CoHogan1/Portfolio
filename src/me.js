@@ -42,7 +42,7 @@ export default class About extends Component {
         return(
             <div className="about">
                 <div className="picHead">
-                    <img src={this.state.me} className="pic" alt=""/>
+                    <img src={this.state.me} className="pic" alt="nothing found"/>
                 </div>
                 <div className="inner">
                     <br></br>
@@ -51,21 +51,21 @@ export default class About extends Component {
                     <p>JavaScript Father Python3 React jQuery<br></br> Flask SQL MongoDB Categorizing Cooking Tacos</p>
                     <br></br>
                     <div>
-                        <img className="skills" src={this.state.html}></img>
-                        <img className="skills" src={this.state.css}></img>
-                        <img className="skills" src={this.state.js}></img>
-                        <img className="skills" src={this.state.py}></img>
-                        <img className="skills" src={this.state.no}></img>
-                        <img className="skills" src={this.state.re}></img>
-                        <img className="skills" src={this.state.fl}></img>
+                        <img className="skills" src={this.state.html} alt=""></img>
+                        <img className="skills" src={this.state.css}  alt=""></img>
+                        <img className="skills" src={this.state.js}   alt=""></img>
+                        <img className="skills" src={this.state.py}   alt=""></img>
+                        <img className="skills" src={this.state.no}   alt=""></img>
+                        <img className="skills" src={this.state.re}   alt=""></img>
+                        <img className="skills" src={this.state.fl}   alt=""></img>
                         <br></br>
-                        <img className="skills" src={this.state.mD}></img>
-                        <img className="skills" src={this.state.pie}></img>
-                        <img className="skills" src={this.state.sq}></img>
-                        <img className="skills" src={this.state.jq}></img>
-                        <img className="skills" src={this.state.ex}></img>
-                        <img className="skills" src={this.state.soc}></img>
-                        <img className="skills" src={this.state.taco}></img>
+                        <img className="skills" src={this.state.mD}   alt=""></img>
+                        <img className="skills" src={this.state.pie}  alt=""></img>
+                        <img className="skills" src={this.state.sq}   alt=""></img>
+                        <img className="skills" src={this.state.jq}   alt=""></img>
+                        <img className="skills" src={this.state.ex}   alt=""></img>
+                        <img className="skills" src={this.state.soc}  alt=""></img>
+                        <img className="skills" src={this.state.taco} alt=""></img>
                     </div>
                 </div>
             </div>

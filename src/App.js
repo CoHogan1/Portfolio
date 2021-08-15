@@ -7,7 +7,7 @@ import color    from './color.png'
 import brain    from './brain_defogger.png'
 import vaca     from './vacation.png'
 import checkers from './checkers.png'
-// 2nd project background
+// 2nd project backgroundls
 import col2     from './color_2.png'
 import darkB    from './dark-brain.png'
 import vac2     from './vaca-2.png'
@@ -83,18 +83,18 @@ class App extends Component{
 
                 <div className="right" >
                     <div className="rbar">
-                    <img src={this.state.ga}></img>
-                    <img src={this.state.pyc}></img>
-                    <img src={this.state.jsc}></img>
-                    <img src={this.state.jqc}></img>
-                    <img src={this.state.cssc}></img>
-                    <img src={this.state.htmlc}></img>
+                    <img src={this.state.ga}     alt=""></img>
+                    <img src={this.state.pyc}    alt=""></img>
+                    <img src={this.state.jsc}    alt=""></img>
+                    <img src={this.state.jqc}    alt=""></img>
+                    <img src={this.state.cssc}   alt=""></img>
+                    <img src={this.state.htmlc}  alt=""></img>
                     <p>More skills Pending.....</p>
                     </div>
                 </div>
 
                 <div className="project">
-                    <div className="proPic"><img src={this.state.p1}></img><img src={this.state.p12}></img></div>
+                    <div className="proPic"><img src={this.state.p1} alt=""></img><img src={this.state.p12} alt=""></img></div>
                     <div className="text">
                     <h1>Guess The Color</h1>
                     <p>This is a two player game where you have two seconds
@@ -102,16 +102,16 @@ class App extends Component{
                     turn the main color changes. However the background, the
                     border, the font color also change.</p>
                     <div>
-                        <img className="skills" src={this.state.html}></img>
-                        <img className="skills" src={this.state.css}></img>
-                        <img className="skills" src={this.state.js}></img>
-                        <img className="skills" src={this.state.taco}></img>
+                        <img className="skills" src={this.state.html} alt="" ></img>
+                        <img className="skills" src={this.state.css}  alt="" ></img>
+                        <img className="skills" src={this.state.js}   alt="" ></img>
+                        <img className="skills" src={this.state.taco} alt="" ></img>
                     </div>
                     </div>
 
                 </div>
                 <div className="project">
-                    <div className="proPic"><img src={this.state.p2}></img><img src={this.state.p22}></img></div>
+                    <div className="proPic"><img src={this.state.p2} alt=""></img><img src={this.state.p22} alt=""></img></div>
                     <div className="text">
                     <h1>Brain Defogger</h1>
                     <p>This app will allow you to keep track of methods you use
@@ -119,17 +119,17 @@ class App extends Component{
                     personal notes, and even a delete button in case you find
                     a better method.</p>
                     <div>
-                        <img className="skills" src={this.state.html}></img>
-                        <img className="skills" src={this.state.css}></img>
-                        <img className="skills" src={this.state.js}></img>
-                        <img className="skills" src={this.state.no}></img>
-                        <img className="skills" src={this.state.mD}></img>
-                        <img className="skills" src={this.state.taco}></img>
+                        <img className="skills" src={this.state.html} alt="" ></img>
+                        <img className="skills" src={this.state.css}  alt="" ></img>
+                        <img className="skills" src={this.state.js}   alt="" ></img>
+                        <img className="skills" src={this.state.no}   alt="" ></img>
+                        <img className="skills" src={this.state.mD}   alt="" ></img>
+                        <img className="skills" src={this.state.taco} alt="" ></img>
                     </div>
                     </div>
                 </div>
                 <div className="project">
-                    <div className="proPic"><img src={this.state.p3}></img><img src={this.state.p32}></img></div>
+                    <div className="proPic"><img src={this.state.p3} alt=""></img><img src={this.state.p32} alt=""></img></div>
                     <div className="text">
                     <h1>Travel Assistant</h1>
                     <p>This app will assist your vacation planning. Utilizing
@@ -137,18 +137,18 @@ class App extends Component{
                         available bookings,  hotel ratings, and even predicted
                         weather for your vacation</p>
                     <div>
-                        <img className="skills" src={this.state.re}></img>
-                        <img className="skills" src={this.state.css}></img>
-                        <img className="skills" src={this.state.js}></img>
-                        <img className="skills" src={this.state.no}></img>
-                        <img className="skills" src={this.state.mD}></img>
-                        <img className="skills" src={this.state.api}></img>
-                        <img className="skills" src={this.state.taco}></img>
+                        <img className="skills" src={this.state.re}   alt="" ></img>
+                        <img className="skills" src={this.state.css}  alt="" ></img>
+                        <img className="skills" src={this.state.js}   alt="" ></img>
+                        <img className="skills" src={this.state.no}   alt="" ></img>
+                        <img className="skills" src={this.state.mD}   alt="" ></img>
+                        <img className="skills" src={this.state.api}  alt="" ></img>
+                        <img className="skills" src={this.state.taco} alt="" ></img>
                     </div>
                     </div>
                 </div>
                 <div className="project">
-                    <div className="proPic"><img src={this.state.p4}></img><img src={this.state.p42}></img></div>
+                    <div className="proPic"><img src={this.state.p4} alt="" ></img><img src={this.state.p42} alt=""></img></div>
                     <div className="text">
                     <h1>Multiplayer Checkers</h1>
                     <p>This app will allow you to play a game of checkers with
@@ -157,24 +157,18 @@ class App extends Component{
                         color scheme, and a dark mode.
                     </p>
                     <div>
-                        <img className="skills" src={this.state.css}></img>
-                        <img className="skills" src={this.state.js}></img>
-                        <img className="skills" src={this.state.py}></img>
-                        <img className="skills" src={this.state.fl}></img>
-                        <img className="skills" src={this.state.sq}></img>
-                        <img className="skills" src={this.state.re}></img>
-                        <img className="skills" src={this.state.soc}></img>
-                        <img className="skills" src={this.state.taco}></img>
+                        <img className="skills" src={this.state.css}  alt="" ></img>
+                        <img className="skills" src={this.state.js}   alt="" ></img>
+                        <img className="skills" src={this.state.py}   alt="" ></img>
+                        <img className="skills" src={this.state.fl}   alt="" ></img>
+                        <img className="skills" src={this.state.sq}   alt="" ></img>
+                        <img className="skills" src={this.state.re}   alt="" ></img>
+                        <img className="skills" src={this.state.soc}  alt="" ></img>
+                        <img className="skills" src={this.state.taco} alt="" ></img>
                     </div>
                     </div>
                 </div>
-
-
-                <div className="footer">Currently Job Hhunting :)
-
-
                 </div>
-            </div>
             </div>
         )
     }
