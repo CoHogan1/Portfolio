@@ -2,16 +2,43 @@
   text-align: center;
   width: 100vw;
   height: 100vh;
-  background-image: url('background.png');
+  background-image: url('./images/marble.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   overflow-y: scroll;
+  margin: auto;
 }
-.cool {
+
+/*  about classes ----------------------------------------------------------- */
+.about {
+    padding: 10px;
     margin: auto;
-    background-color: rgba(0,200,255, 0.2);
-    width:95%;
-    background-size: cover;
+    margin-top: 70px;
+    max-width: 1100px;
+    min-width: 80%;
+    background-color: snow;
+    border-right: 20px solid red;
+    border-bottom: 10px solid darkred;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 2px;
+    align-items: center;
+
+}
+.about>div>h1 {
+    font-style: italic;
+}
+.about>div>h2 {
+    font-style: italic;
+}
+
+.left>img{
+    height: 230px;
+    width: 210px;
+}
+.user{
+    height: 30px;
+    width: 30px;
 }
 
 .skills {
@@ -21,95 +48,30 @@
     margin-left: 5px;
     margin-bottom: 20px;
 }
-/* .skills:hover{
-    height:80px;
-    width:80px;
-    transition: 0.3s ease;
-} */
-
-.spacer {
-    height: 40px;
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(5, 5fr);
+    align-items: center;
 }
 
-.about {
-    border-radius: 10px;
-    background-image: url('code.png');
-    background-size: cover;
-    /* background-color: rgba(20,20,20, 0.7); /* Black*/
-    width: 660px;
-    margin: auto;
-    overflow: hidden;
-}
-
-.pic {
-    height: 250px;
-    width: 230px;
-    border-radius: 40px;
-    border: 1px solid blue;
-    margin-top: 30px;
-}
-.pic:hover  {
-    height: 290px;
-    width: 270px;
-    transition: 0.3s ease;
-}
-
-.inner > p {
-    padding:0;
-    margin: 0;
-    font-size: 20px;
-}
-
-.picHead {
-    height:300px;
-}
-
-.inner {
-    background-color: white;
-
-}
-
+/* ------------------------------------------------------------------------- */
 .nav {
-    height: 100%; /* 100% Full-height */
-    width: 340px;
-    position: fixed; /* Stay in place */
+    height: 50px;
+    width: 100vw;
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: rgba(20,20,20, 0.7); /* Black*/
+    background-color: rgba(250,250,250, 0.7); /* Black*/
     color:white;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-    border-right: 2px solid black;
-}
-
-.right {
-    height: 100%;
-    width: 340px;
-    position: fixed;
-    z-index:1;
-    top: 0;
-    right: 0;
-    background-color: rgba(20,20,20, 0.7); /* Black*/
-    color:white;
-    overflow-x: hidden;
-    border-right: 2px solid black;
-    display: flex;
-    flex-direction: column;
+    /* overflow-x: hidden; /* Disable horizontal scroll */
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(11, 11fr);
+    gap: 2rem;
+    align-items: center;
     justify-content: space-between;
 }
 
-.rbar > img {
-    height: 150px;
-    width: 195px;
-    margin-bottom: 10px;
-}
-.rbar > img:hover {
-    height: 270px;
-    width: 270px;
-    transition: 1s ease;
-}
 a {
     color: white;
 }
@@ -122,259 +84,102 @@ a:hover {
     font-size: 20px;
     transition: 0.3s ease;
 }
-p:hover {
-    color:red;
-    transition: 0.3s ease;
+
+/*  all boxes----------------------------------------- */
+.spacer {
+    height: 40px;
+}
+.project {
+    padding: 10px;
+    background-color: snow;
+    margin: 50px auto;
+    max-width: 1100px;
+    min-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 2.5fr);
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    /* border-right: 20px solid orange;
+    border-bottom: 10px solid darkorange; */
+}
+.pOne {
+    border-right: 20px solid yellow;
+    border-bottom: 10px solid #cccc00;
+}
+.pTwo{
+    border-right: 20px solid green;
+    border-bottom: 10px solid darkgreen;
 }
 
-.project {
-    margin: auto;
-    margin-top: 40px;
-    border-radius: 20px;
-    overflow: hidden;
-    width: 600px;
-    border: 1px solid blue;
+.pThree {
+    border-right: 20px solid blue;
+    border-bottom: 10px solid darkblue;
 }
+.pFour{
+    border-right: 20px solid purple;
+    border-bottom: 10px solid #4b0082;
+}
+
+
+.project-review {
+    padding:10px;
+    margin: 30px auto;
+    background-color: snow;
+    max-width: 1100px;
+    min-width: 80%;
+    text-align: left;
+    font-weight: normal;
+    font-size: italic;
+}
+
+.one {
+    border-right: 20px solid orange;
+    border-bottom: 10px solid darkorange;
+}
+.two {
+    border-right: 20px solid orange;
+    border-bottom: 10px solid darkorange;
+}
+.three {
+    border-right: 20px solid orange;
+    border-bottom: 10px solid darkorange;
+}
+.four {
+    border-right: 20px solid orange;
+    border-bottom: 10px solid darkorange;
+}
+.five {
+    border-right: 20px solid orange;
+    border-bottom: 10px solid darkorange;
+}
+.six{
+    border-right: 20px solid orange;
+    border-bottom: 10px solid darkorange;
+}
+
 
 .proPic {
+    height: 200px;
+    width: 200px;
     background-color: rgba(20,20,20, 0.7); /* Black*/
 }
 
-.proPic > img {
-    height: 200px;
-    width: 200px;
-    margin-left: 40px;
+ul {
+    list-style: decimal;
 }
-
-.proPic > img:hover{
-    height:300px;
-    width:300px;
-    transition: 1s ease;
+li {
+    padding: 5px;
 }
-
-img {
-    background-color: rgba(0,0,0, 0.0);
-}
-
-.text {
-    background-color: white;
-    border: 2px solid white;
-
-}
-
-.footer {
-    margin: auto;
-    margin-top: 30px;
-    height: 100px;
-    background-color: rgba(0,0,0, 0.5);
-    border-radius: 30px 30px 0 0;
-    width: 600px;
-    color: white;
-    line-height: 80px;
-}
-
 
 /*  media media media media media media media media media *********************/
 /* s10 is 360 px by 760px  cell phone */
 /* 1200-1500 by 2000+ tablet */
 
 
-@media only screen and (max-width: 600px) {   /* cell phone only*/
-    .App {
-      text-align: center;
-      width: 100vw;
-      height: 100vh;
-      background-image: url('background.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      overflow-y: scroll;
-    }
-    .cool {
-        margin: auto;
-        background-color: rgba(0,200,255, 0.2);
-        width:95%;
-        background-size: cover;
-    }
-
-    /*  these are the language logos */
-    .skills {
-        height: 40px;
-        width: 40px;
-        border: 1px solid black;
-        margin-left: 5px;
-        margin-bottom: 20px;
-    }
-    /* .skills:hover{
-        height:80px;
-        width:80px;
-        transition: 0.3s ease;
-    } */
-
-    .spacer {
-        height: 40px;
-    }
-
-    /*   the main div of me*/
-    .about {
-        border-radius: 10px;
-        background-image: url('code.png');
-        background-size: 200%;
-        background-position: left;
-        /* background-color: rgba(20,20,20, 0.7); /* Black*/
-        width: 85%;
-        margin: auto;
-        margin-top: 130px;
-        overflow: hidden;
-    }
-    /*  pic of me */
-    .pic {
-        height: 150px;
-        width: 150px;
-        border-radius: 40px;
-        border: 1px solid blue;
-        margin-top: 30px;
-    }
-    /* .pic:hover  {
-        height: 290px;
-        width: 270px;
-        transition: 0.3s ease;
-    } */
-
-    .inner > p {
-        padding:0;
-        margin: 0;
-        font-size: 20px;
-    }
-
-    .picHead {
-        height:300px;
-    }
-
-    .inner {
-        background-color: white;
-
-    }
-
-    .nav {
-        height: 112px; /* 100% Full-height */
-        width: 100%;
-        padding: 0;
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Stay on top */
-        top: 0; /* Stay at the top */
-        /* left: 0; */
-        background-color: rgba(20,20,20, 0.7); /* Black*/
-        color:white;
-        font-size: 15px;
-        overflow-x: hidden; /* Disable horizontal scroll */
-        border-right: 2px solid black;
-    }
-    .nav>p {
-        padding:0;
-        margin:5px;
-    }
-
-
-    .right {
-        height: 200px;
-        width: 80%;
-        position: relative;
-        margin: auto;
-        margin-top: 30px;
-        border-radius: 20px;
-        z-index:1;
-        top: 0;
-        right: 0;
-        background-color: rgba(20,20,20, 0.7); /* Black*/
-        color:white;
-        /* overflow-x: hidden; */
-        border-right: 2px solid black;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .right:hover {
-        width: 20%;
-        transition: 0.5s ease;
-
-    }
-
-    .rbar > img {
-        height: 150px;
-        width: 195px;
-        margin-bottom: 10px;
-    }
-    .rbar > img:hover {
-        height: 270px;
-        width: 270px;
-        transition: 1s ease;
-    }
-
-    a:visited {
-        color: white;
-    }
-
-    a:hover {
-        color: red;
-        font-size: 20px;
-        transition: 0.3s ease;
-    }
-    p:hover {
-        color:red;
-        transition: 0.3s ease;
-    }
-
-    /* project boxes */
-    .project {
-        margin: auto;
-        margin-top: 40px;
-        border-radius: 20px;
-        overflow: hidden;
-        width: 80%;
-        border: 1px solid blue;
-    }
-
-    .proPic {
-        background-color: rgba(20,20,20, 0.7); /* Black*/
-    }
-
-    .proPic > img {
-        margin:auto;
-        height: 200px;
-        width: 200px;
-    }
-
-    .proPic > img:hover{
-        height:300px;
-        width:300px;
-        transition: 1s ease;
-    }
-
-    img {
-        background-color: rgba(0,0,0, 0.0);
-    }
-
-    .text {
-        background-color: white;
-        border: 2px solid white;
-
-    }
-
-    .footer {
-        margin: auto;
-        margin-top: 30px;
-        height: 100px;
-        background-color: rgba(0,0,0, 0.5);
-        border-radius: 30px 30px 0 0;
-        width: 90%;
-        color: white;
-        line-height: 80px;
-    }
+@media only screen and (max-width: 800px) {   /* cell phone only*/
 
 }
-
-
-
 
 @media only screen and (max-width: 1700px min-width: 1000px) {
 

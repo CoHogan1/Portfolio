@@ -1,0 +1,113 @@
+/*  these are the language logos */
+.skills {
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+/*   the main div of me*/
+.about {
+    border-radius: 10px;
+    background-image: url('./images/code.png');
+    background-size: 200%;
+    background-position: left;
+    /* background-color: rgba(20,20,20, 0.7); /* Black*/
+    width: 85%;
+    margin: auto;
+    margin-top: 130px;
+    overflow: hidden;
+}
+/*  pic of me */
+.pic {
+    height: 150px;
+    width: 150px;
+    border-radius: 40px;
+    border: 1px solid blue;
+    margin-top: 30px;
+}
+
+.inner > p {
+    padding:0;
+    margin: 0;
+    font-size: 20px;
+}
+
+.picHead {
+    height:300px;
+}
+
+.inner {
+    background-color: white;
+
+}
+
+.nav {
+    height: 112px; /* 100% Full-height */
+    width: 100vw;
+    padding: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    /* left: 0; */
+    background-color: rgba(20,20,20, 0.7); /* Black*/
+    color:white;
+    font-size: 15px;
+    border-right: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(6, 6fr);
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: red;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+p:hover {
+    color:red;
+    transition: 0.3s ease;
+}
+
+/* project boxes */
+.project {
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 80%;
+    border: 1px solid blue;
+}
+
+.proPic {
+    background-color: rgba(20,20,20, 0.7); /* Black*/
+}
+
+.proPic > img {
+    margin:auto;
+    height: 200px;
+    width: 200px;
+}
+
+.proPic > img:hover{
+    height:300px;
+    width:300px;
+    transition: 1s ease;
+}
+
+img {
+    background-color: rgba(0,0,0, 0.0);
+}
+
+.text {
+    background-color: white;
+    border: 2px solid white;
+
+}

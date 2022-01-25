@@ -1,21 +1,28 @@
 import './App.css';
 import React, { Component } from 'react'
+import self from './images/me.png'
 
 
 export default class Navigation extends Component {
     constructor(props){
         super(props)
         this.state = {
-            linkedin : 'http://www.linkedin.com/in/conner-hogan-40b39b37',
-            gitHub: 'http://www.github.com/CoHogan1',
-            resume: 'https://docs.google.com/document/d/1qXPDeWNiPBRNpcFi6r4XKwQZzN1VeNRxzJYcbU-jIxg/edit?usp=sharing',
-            project1: 'http://cohogan1.github.io/Neon-Color-game/',
-            project2: 'https://baindefogger.herokuapp.com/',
+            linkedin:  'http://www.linkedin.com/in/conner-hogan-40b39b37',
+            gitHub:    'http://www.github.com/CoHogan1',
+            project1:  'https://determined-hermann-f61924.netlify.app/',
+            updateP1:  'https://determined-hermann-f61924.netlify.app/',
+            project2:  'https://updatedprojecttwo.herokuapp.com/sessions/new',
+            updatedP2: 'https://updatedprojecttwo.herokuapp.com/sessions/new',
             project3F: '',
             project3B: '',
             project4B: '',
             project4F: '',
+            me: self,
         }
+    }
+    copy = () =>{
+        const content = `720-338-5637`
+        navigator.clipboard.writeText(content)
     }
 
 
@@ -23,9 +30,10 @@ export default class Navigation extends Component {
     render(){
         return(
             <div className="nav">
-                <p>ConnerRHogan@Gmail.com</p>
-                <p>720-338-5637</p>
-                <p>Golden CO</p>
+                <p><img className="user" src={this.state.me} alt="selfie" ></img></p>
+                <a href="mailto: ConnerRHogan@gmail.com">Email</a>
+                <p onClick={this.copy}>Phone </p>
+
                 <p><a href={this.state.gitHub} target="_blank" rel="noreferrer">GitHub</a></p>
 
                 <p><a href={this.state.linkedin} target="_blank" rel="noreferrer">LinkedIn</a></p>
