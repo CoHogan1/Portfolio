@@ -80,12 +80,15 @@ class App extends Component{
     <About/>
 
     <div className="project-review one">
-    <h2>From Bryce Dyer</h2>
-    <p>Conner executes his responsibilities as a Kiln Tech consistently,
-    he provides quality and timely work for his customer therefor keeping
-    things on schedule. His attention to detail and proactive approach helps
-    avoid potential problems before they start.
-    </p>
+    <h2>Debbie S. Brannon -Fellow GA Alumni.</h2>
+    <ul>
+    <li>Conner and I are enrolled in a Software Engineering Bootcamp together.
+    Not only does he have an execellent grasp on the material, but he shares
+    his knowledge with other members of the group. He played a tremendous role in
+    stregnthing my confidence in React through his recommendations of outside
+    resources. Conner is an incredible team player.
+    </li>
+    </ul>
     </div>
 
     <div className="project pOne">

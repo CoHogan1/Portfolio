@@ -1,7 +1,12 @@
 import './App.css';
 import React, { Component } from 'react'
-import self from './images/me.png'
-
+// skills
+import GA    from './images/GA.png'
+import pyc   from './images/python3c.png'
+import jsc   from './images/jsc.png'
+import jqc   from './images/jqc.png'
+import cssc  from './images/cssc.png'
+import htmlc from './images/htmlc.png'
 
 export default class Navigation extends Component {
     constructor(props){
@@ -17,7 +22,12 @@ export default class Navigation extends Component {
             project3B: '',
             project4B: '',
             project4F: '',
-            me: self,
+            ga: GA,
+            py: pyc,
+            js: jsc,
+            jq: jqc,
+            css:cssc,
+            html:htmlc,
         }
     }
     copy = () =>{
@@ -25,28 +35,39 @@ export default class Navigation extends Component {
         navigator.clipboard.writeText(content)
     }
 
-
-
     render(){
         return(
             <div className="nav">
-                <p><img className="user" src={this.state.me} alt="selfie" ></img></p>
-                <a href="mailto: ConnerRHogan@gmail.com">Email</a>
-                <p onClick={this.copy}>Phone </p>
-
-                <p><a href={this.state.gitHub} target="_blank" rel="noreferrer">GitHub</a></p>
-
+                <p><a href="mailto: ConnerRHogan@gmail.com">Email</a></p>
                 <p><a href={this.state.linkedin} target="_blank" rel="noreferrer">LinkedIn</a></p>
-
-                <p><a href={this.state.project1} target="_blank" rel="noreferrer">Project 1</a></p>
-                <p><a href={this.state.project2} target="_blank" rel="noreferrer">Project 2</a></p>
-
-                <p><a href={this.state.project3B} target="_blank" rel="noreferrer">Project 3 Back End</a></p>
-                <p><a href={this.state.project3F} target="_blank" rel="noreferrer">Project 3 Front End</a></p>
-
-                <p><a href={this.state.project4B} target="_blank" rel="noreferrer">Project 4 Back End</a></p>
-                <p><a href={this.state.project4F} target="_blank" rel="noreferrer">Project 4 Front End</a></p>
+                <p><a href={this.state.gitHub} target="_blank" rel="noreferrer">Github</a></p>
             </div>
         )
     }
 }
+
+
+
+
+
+// <ol>
+// <li><a href="mailto: ConnerRHogan@gmail.com">Email</a></li>
+// <li onClick={this.copy}>Phone</li>
+// <li><a href={this.state.linkedin} target="_blank" rel="noreferrer">LinkedIn</a></li>
+// </ol>
+
+
+// <ol>
+// <li><a href={this.state.gitHub} target="_blank" rel="noreferrer">Github</a></li>
+// <li><a href={this.state.updatedp1} target="_blank" rel="noreferrer">Project 1</a></li>
+// <li><a href={this.state.updatedp2} target="_blank" rel="noreferrer">Project 2</a></li>
+// <li><a href={this.state.project3B} target="_blank" rel="noreferrer">Project 3 Back End</a></li>
+// <li><a href={this.state.project3F} target="_blank" rel="noreferrer">Project 3 Front End</a></li>
+// <li><a href={this.state.project4B} target="_blank" rel="noreferrer">Project 4 Back End</a></li>
+// <li><a href={this.state.project4F} target="_blank" rel="noreferrer">Project 4 Front End</a></li>
+// </ol>
+
+
+// <ol>
+//     <li>GA graduate</li>
+// </ol>
