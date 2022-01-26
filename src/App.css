@@ -218,9 +218,19 @@ li {
 
 @media only screen and (max-width: 550px) {   /* cell phone only*/
     .skills {
-        height: 40px;
-        width: 40px;
+        height: 30px;
+        width: 30px;
     }
+    .skills-container {
+        grid-template-columns: repeat(3, 4fr);
+    }
+    .left>img {
+        height: 120px;
+        width: 120px;
+
+    }
+
+
 }
 
 @media only screen and (max-width: 800px) {

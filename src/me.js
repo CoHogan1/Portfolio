@@ -44,7 +44,7 @@ export default class About extends Component {
 
             <div className="about-picHead">
                 <div className="left">
-                <img src={this.state.me} alt="selfie"/>
+                <img className="me" src={this.state.me} alt="selfie"/>
                 </div>
                 <div className="right">
                 <h4>~Skills~</h4>
