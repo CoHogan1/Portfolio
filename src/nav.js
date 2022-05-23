@@ -38,15 +38,19 @@ export default class Navigation extends Component {
     render(){
         return(
             <div className="nav">
-                <p><a href="mailto: ConnerRHogan@gmail.com">Email</a></p>
-                <p><a href={this.state.linkedin} target="_blank" rel="noreferrer">LinkedIn</a></p>
-                <p><a href={this.state.gitHub} target="_blank" rel="noreferrer">Github</a></p>
+                    <p>About me</p>
+                    <p>Skills</p>
+                    <p>projects</p>
+                    <p>contact me</p>
             </div>
         )
     }
 }
 
 
+// <p><a href="mailto: ConnerRHogan@gmail.com">Email</a></p>
+// <p><a href={this.state.linkedin} target="_blank" rel="noreferrer">LinkedIn</a></p>
+// <p><a href={this.state.gitHub} target="_blank" rel="noreferrer">Github</a></p>
 
 
 

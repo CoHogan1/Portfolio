@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import Navigation  from './nav'
 
 //1st project backround
-import About    from './me.js'
+import About    from './aboutMe.js'
 import color    from './images/colorGame.png'
 import brain    from './images/brain_defogger.png'
 import vaca     from './images/vacation.png'
@@ -35,6 +35,11 @@ import jsc   from './images/jsc.png'
 import jqc   from './images/jqc.png'
 import cssc  from './images/cssc.png'
 import htmlc from './images/htmlc.png'
+
+
+
+// new app.
+import Skills from './skills.js'
 
 class App extends Component{
     constructor(props){
@@ -76,10 +81,28 @@ class App extends Component{
     render(){
         return (
     <div className="App">
-    <Navigation />
-    <About/>
 
-    <div className="project-review one">
+        <div className="nav">
+                <p>About me</p>
+                <p>Skills</p>
+                <p>projects</p>
+                <p>contact me</p>
+        </div>
+
+
+
+        <Skills />
+        
+        {/*  <About/>  */}
+
+
+
+
+
+    { /* <Navigation > */ }
+    { /*  <About/>  */ }
+
+    {/* }<div className="project-review one">
     <h2>Debbie S. Brannon -Fellow GA Alumni.</h2>
     <ul>
     <li>Conner and I are enrolled in a Software Engineering Bootcamp together.
@@ -337,7 +360,7 @@ class App extends Component{
     <ul>
         <li>pending..... 06/2022</li>
     </ul>
-    </div>
+    </div> */}
     </div>
         )
     }

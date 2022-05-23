@@ -21,20 +21,7 @@ export default class About extends Component {
         super(props)
         this.state = {
             me: picture,
-            js: js,
-            py: python,
-            jq: jquery,
-            re: react,
-            no: node,
-            fl: flask,
-            mD: mongoDB,
-            sq: sql,
-            css: css,
-            html: html,
-            soc: socket,
-            ex: exp,
-            taco: taco,
-            pie: pie,
+            skills:[js, python, jquery, react, node, flask, mongoDB,sql,css,html,socket,exp,taco,pie],
         }
     }
 
@@ -46,31 +33,45 @@ export default class About extends Component {
                 <div className="left">
                 <img className="me" src={this.state.me} alt="selfie"/>
                 </div>
+                {/*
                 <div className="right">
                 <h4>~Skills~</h4>
                 <p>JavaScript, Father, Python3, React, j-Query, Flask, SQL, MongoDB, Categorizing, and Cooking Tacos</p>
                 </div>
+                */}
+
             </div>
+
+            <p>I am a detail oriented person. I bring a flexable working attitude.
+             working in various fields, I can easily fit into almost any team.
+             With almost two decades of work experience jumping into a new project
+              is not an issue.
+            </p>
+
+            <ul>
+                <li>creative approach to problem solving</li>
+                <li>dependable</li>
+                <li>time management</li>
+                <li>eager to learn new skills</li>
+                <li>lots of experience</li>
+                <li>flexable</li>
+                <li>leader</li>
+                <li>consistent</li>
+                <li>Result driven</li>
+                <li>Team player</li>
+            </ul>
 
             <div>
                 <h1>Fullstack Software Developer</h1>
                 <h2>Javascript & Python3</h2>
+
                 <div className="skills-container" >
-                    <img className="skills" src={this.state.html} alt=""></img>
-                    <img className="skills" src={this.state.css}  alt=""></img>
-                    <img className="skills" src={this.state.js}   alt=""></img>
-                    <img className="skills" src={this.state.py}   alt=""></img>
-                    <img className="skills" src={this.state.no}   alt=""></img>
-                    <img className="skills" src={this.state.re}   alt=""></img>
-                    <img className="skills" src={this.state.fl}   alt=""></img>
-                    <img className="skills" src={this.state.mD}   alt=""></img>
-                    <img className="skills" src={this.state.pie}  alt=""></img>
-                    <img className="skills" src={this.state.sq}   alt=""></img>
-                    <img className="skills" src={this.state.jq}   alt=""></img>
-                    <img className="skills" src={this.state.ex}   alt=""></img>
-                    <img className="skills" src={this.state.soc}  alt=""></img>
-                    <img className="skills" src={this.state.taco} alt=""></img>
+                    {this.state.skills.map((x,i) => {
+                        return <img className="skills" src={x} alt="" key={i}></img>
+                    })}
                 </div>
+
+
             </div>
             </div>
         )

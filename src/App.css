@@ -67,11 +67,25 @@
     background-color: slategrey;
     color:white;
     padding: 10px;
-    display: grid;
+
+    display: flex;
+    flex-direction: row;
+
+    /* display: grid;
     grid-template-columns: repeat(3, 6fr);
-    gap: 2rem;
-    align-items: center;
-    justify-content: space-between;
+    gap: 2rem; */
+
+    /* align-items: center; */
+    justify-content: space-around;
+}
+
+.nav > ul {
+    list-style: none;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
 }
 
 .modalOneHide {
@@ -237,4 +251,19 @@ li {
     .App {
         font-size: 1em;
     }
+}
+
+
+.skills {
+    background-color: white;
+}
+
+li {
+    width: 100px;
+    background: white;
+}
+
+img {
+    max-width: 50px;
+    max-height: 50px;
 }
