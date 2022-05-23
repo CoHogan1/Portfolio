@@ -68,6 +68,43 @@
     padding: 25px;
 }
 
+/*  skills page */
+.skills > h2 {
+    margin: auto;
+    padding: 40px 0;
+    text-align: center;
+}
+.skill-container {
+    margin: 20px auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skill-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* border: 2px solid yellow; */
+    height: 50px;
+    width: 130px;
+    line-height: 50px;
+    padding: 20px;
+}
+
+.certifications {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.certs {
+    height: 150px;
+    width: 150px;
+}
+
 
 
 /* universal  */

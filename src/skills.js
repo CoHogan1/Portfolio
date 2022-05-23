@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 import css      from './images/css-logo.png'
 import html     from './images/html5.png'
 import js       from './images/js-logo.png'
-import python   from './images/python-logo.png'
+import python3   from './images/python-logo.png'
 import jquery   from './images/jquery-logo.png'
 import react    from './images/react-logo.png'
 import node     from './images/node-logo.png'
@@ -16,10 +16,21 @@ import api      from './images/api.png'
 import exp      from './images/exp.png'
 import socket   from './images/socket.png'
 import taco     from './images/taco.png'
+// cetifications
+import GA    from './images/GA.png'
+import pyc   from './images/python3c.png'
+import jsc   from './images/jsc.png'
+import jqc   from './images/jqc.png'
+import cssc  from './images/cssc.png'
+import htmlc from './images/htmlc.png'
+// import hack from './images/hack.png'
 
 
 
-let skillArr = [css, html, js, python, jquery, react, node, flask, mongoDB, sql, api, exp, socket, taco]
+let skillArr = [html, css, js, python3, jquery, react, node, flask, mongoDB, sql, api, exp, socket, taco]
+let words = ['HTML','CSS','Java-script', 'Python3', 'jQuery','React','Node.js','Flask','MongoDb','SQL','API','EXP','Socket.io','Tacos']
+let qual = [GA, htmlc, cssc, jsc, jqc, pyc]
+
 
 function App(){
     let [test, setTest ] = useState(0)
@@ -28,15 +39,29 @@ function App(){
 
 
     return(
-        <div >
-        <div>skills</div>
-        <ul>
+        <div className="skills">
+        <h2>Software Skills</h2>
+        <div className="skill-container">
+
             {skills.map((v,i) => {
-                return  <li  className="skill-box" key={i}>
+                return  <div  className="skill-box" key={i}>
                         <img src={v} alt="idk" loading="lazy"/>
-                        </li>
+                        <p>{words[i]}</p>
+                        </div>
             })}
-        </ul>
+        </div>
+        <h2>Certification</h2>
+
+        <section className="certifications">
+            {qual.map((v,i) => {
+                return <div>
+                    <img src={v} alt="skills img" loading="lazy" className="certs"/>
+                    </div>
+            })}
+            <li>hackerrank javascript</li>
+
+
+        </section>
         </div>
     )
 }
