@@ -8,6 +8,20 @@ function App(){
     return(
         <div className="review">
         <p>Reviews</p>
+            <div className="project-review one">
+            <h2>Debbie S. Brannon -Fellow GA Alumni.</h2>
+            <ul>
+            <li>Conner and I are enrolled in a Software Engineering Bootcamp together.
+            Not only does he have an execellent grasp on the material, but he shares
+            his knowledge with other members of the group. He played a tremendous role in
+            stregnthing my confidence in React through his recommendations of outside
+            resources. Conner is an incredible team player.
+            </li>
+            </ul>
+            </div>
+
+
+
             <div className="project-review two">
             <h2>Tracey Lucero ~ 2017</h2>
             <ul>

@@ -14,10 +14,6 @@ function App(){
                 <p> why hire me?</p>
                 <p>Explain why in more words.</p>
 
-
-
-
-
             </div>
         </div>
     )

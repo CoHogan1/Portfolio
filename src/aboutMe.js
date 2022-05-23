@@ -29,10 +29,17 @@ export default class About extends Component {
         return(
             <div className="about">
 
-            <div className="about-picHead">
-                <div className="left">
-                <img className="me" src={this.state.me} alt="selfie"/>
-                </div>
+            <span>
+            <img className="about img" src={this.state.me} alt="selfie" loading="lazy"/>
+
+            <p className="pitch" >I am a detail oriented person. I bring a flexable working attitude.
+                working in various fields, I can easily fit into almost any team.
+                With almost two decades of work experience jumping into a new project
+                is not an issue.
+            </p>
+            </span>
+
+
                 {/*
                 <div className="right">
                 <h4>~Skills~</h4>
@@ -40,15 +47,9 @@ export default class About extends Component {
                 </div>
                 */}
 
-            </div>
 
-            <p>I am a detail oriented person. I bring a flexable working attitude.
-             working in various fields, I can easily fit into almost any team.
-             With almost two decades of work experience jumping into a new project
-              is not an issue.
-            </p>
 
-            <ul>
+            <ul className="traits">
                 <li>creative approach to problem solving</li>
                 <li>dependable</li>
                 <li>Loves Tacos</li>
@@ -62,16 +63,17 @@ export default class About extends Component {
                 <li>Team player</li>
             </ul>
 
-            <ul>
+
+
+            <ul className="interests">
                 <li>Bands?</li>
                 <li>NIN</li>
                 <li>Metallica</li>
                 <li>tool</li>
                 <li>more</li>
-
             </ul>
 
-            <div>
+
 
                 {/* <div className="skills-container" >
                     {this.state.skills.map((x,i) => {
@@ -80,7 +82,7 @@ export default class About extends Component {
                 </div> */}
 
 
-            </div>
+
             </div>
         )
     }

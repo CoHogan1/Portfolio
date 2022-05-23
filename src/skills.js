@@ -29,13 +29,14 @@ function App(){
 
     return(
         <div >
-        <p>{test}</p>
         <div>skills</div>
-            <ul>
-                {skills.map((v,i) => {
-                    return <li  className="skill-box" key={i}><img src={v} alt="idk"></img></li>
-                })}
-            </ul>
+        <ul>
+            {skills.map((v,i) => {
+                return  <li  className="skill-box" key={i}>
+                        <img src={v} alt="idk" loading="lazy"/>
+                        </li>
+            })}
+        </ul>
         </div>
     )
 }

@@ -1,6 +1,5 @@
 import './App.css';
 import React, { Component } from 'react'
-import Navigation  from './nav'
 
 //1st project backround
 import About    from './aboutMe.js'
@@ -50,6 +49,8 @@ class App extends Component{
         super(props)
         this.state = {
             me:   true,
+            arr: ['About','Skills','Projects','Review','Why?','Contact'],
+            view: 0,
             pyc:   pyc,
             jsc:   jsc,
             jqc:   jqc,
@@ -82,35 +83,38 @@ class App extends Component{
     }
 
 
+
+    setView = (val) => {
+        if (this.state.view === val) {
+            this.setState({ view: 0,  })
+            return
+        }
+        this.setState({ view: val })
+    }
+
     render(){
         return (
     <div className="App">
 
         <div className="nav">
-            <p>About me</p>
-            <p>Skills</p>
-            <p>projects</p>
-            <p>Reviews</p>
-            <p>Why?</p>
-            <p>contact me</p>
+            {this.state.arr.map((v,i) => {
+                return <p onClick={()=> this.setView(i)} key={i}>{v}</p>
+            })}
         </div>
-        <Contact />
 
-        <Projects />
+        {this.state.view === 0 ? <About />    : null}
+        {this.state.view === 1 ? <Skills />   : null}
+        {this.state.view === 2 ? <Projects /> : null}
+        {this.state.view === 3 ? <Review />   : null}
+        {this.state.view === 4 ? <Why />      : null}
+        {this.state.view === 5 ? <Contact />  : null}
 
-        {/* <Why /> */}
-
-
+        {/*  <About/>    */}
+        {/* <Skills />   */}
+        {/* <Projects /> */}
         {/*  <Review />  */}
-
-        {/* <Skills /> */}
-
-        {/*  <About/>  */}
-
-    { /* <Navigation > */ }
-
-
-
+        {/* <Why />      */}
+        {/* <Contact />  */}
 
 
     {/* }<div className="project-review one">

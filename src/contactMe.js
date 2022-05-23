@@ -1,6 +1,8 @@
 import './App.css';
 import React, { useState } from 'react'
 
+// add icons to each option.
+
 
 // <p><a href="mailto: ConnerRHogan@gmail.com">Email</a></p>
 
