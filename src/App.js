@@ -40,6 +40,10 @@ import htmlc from './images/htmlc.png'
 
 // new app.
 import Skills from './skills.js'
+import Review from './review.js'
+import Why from './why.js'
+import Projects from './projects.js'
+import Contact from './contactMe.js'
 
 class App extends Component{
     constructor(props){
@@ -83,24 +87,31 @@ class App extends Component{
     <div className="App">
 
         <div className="nav">
-                <p>About me</p>
-                <p>Skills</p>
-                <p>projects</p>
-                <p>contact me</p>
+            <p>About me</p>
+            <p>Skills</p>
+            <p>projects</p>
+            <p>Reviews</p>
+            <p>Why?</p>
+            <p>contact me</p>
         </div>
+        <Contact />
+
+        <Projects />
+
+        {/* <Why /> */}
 
 
+        {/*  <Review />  */}
 
-        <Skills />
-        
+        {/* <Skills /> */}
+
         {/*  <About/>  */}
 
-
-
-
-
     { /* <Navigation > */ }
-    { /*  <About/>  */ }
+
+
+
+
 
     {/* }<div className="project-review one">
     <h2>Debbie S. Brannon -Fellow GA Alumni.</h2>

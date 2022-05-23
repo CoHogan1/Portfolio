@@ -51,6 +51,7 @@ export default class About extends Component {
             <ul>
                 <li>creative approach to problem solving</li>
                 <li>dependable</li>
+                <li>Loves Tacos</li>
                 <li>time management</li>
                 <li>eager to learn new skills</li>
                 <li>lots of experience</li>
@@ -61,15 +62,22 @@ export default class About extends Component {
                 <li>Team player</li>
             </ul>
 
-            <div>
-                <h1>Fullstack Software Developer</h1>
-                <h2>Javascript & Python3</h2>
+            <ul>
+                <li>Bands?</li>
+                <li>NIN</li>
+                <li>Metallica</li>
+                <li>tool</li>
+                <li>more</li>
 
-                <div className="skills-container" >
+            </ul>
+
+            <div>
+
+                {/* <div className="skills-container" >
                     {this.state.skills.map((x,i) => {
                         return <img className="skills" src={x} alt="" key={i}></img>
                     })}
-                </div>
+                </div> */}
 
 
             </div>
