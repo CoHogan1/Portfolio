@@ -5,7 +5,7 @@
 }
 
 .App {
-  font-size: 1em;
+  font-size: 2em;
   width: 100vw;
   height: 100vh;
   background-image: url('./images/marble.jpg');
@@ -77,15 +77,16 @@
 .skill-container {
     margin: 20px auto;
     width: 90%;
+    height: 400px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .skill-box {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    /* justify-content: flex-start; */
     /* border: 2px solid yellow; */
     height: 50px;
     width: 130px;
@@ -101,10 +102,41 @@
 }
 
 .certs {
-    height: 150px;
-    width: 150px;
+    height:75px;
+    width: 75px;
 }
 
+
+
+
+/*  project review */
+.project {
+    margin: 75px auto;
+    text-align: center;
+    padding: 15px;
+
+}
+.project-review {
+    width: 95%;
+    /* border: 3px solid yellow; */
+    padding: 10px;
+    margin: 15px 0;
+}
+
+.project-review > h2 {
+    padding: 15px;
+}
+.project-review > ul >li {
+    padding: 20px;
+}
+.project-disc {
+
+}
+.project-disc > img {
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+}
 
 
 /* universal  */

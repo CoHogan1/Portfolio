@@ -25,11 +25,15 @@ import cssc  from './images/cssc.png'
 import htmlc from './images/htmlc.png'
 // import hack from './images/hack.png'
 
+import hGold from './images/hackerrankGold.png'
+import hJSb from './images/hackerrankJSBasic.png'
+import hpy from './images/hackerrankPython.png'
+
 
 
 let skillArr = [html, css, js, python3, jquery, react, node, flask, mongoDB, sql, api, exp, socket, taco]
 let words = ['HTML','CSS','Java-script', 'Python3', 'jQuery','React','Node.js','Flask','MongoDb','SQL','API','EXP','Socket.io','Tacos']
-let qual = [GA, htmlc, cssc, jsc, jqc, pyc]
+let qual = [GA, hJSb, hGold, hpy, htmlc, cssc, jsc, jqc, pyc]
 
 
 function App(){
@@ -58,8 +62,6 @@ function App(){
                     <img src={v} alt="skills img" loading="lazy" className="certs"/>
                     </div>
             })}
-            <li>hackerrank javascript</li>
-
 
         </section>
         </div>
