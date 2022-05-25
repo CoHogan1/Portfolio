@@ -17,7 +17,7 @@ export default class About extends Component {
             <span>
             <img className="about-img" src={this.state.me} alt="selfie" loading="lazy"/>
 
-            <p className="pitch">"I am a detail oriented person. I bring a flexable working attitude.
+            <p className="pitch"> "I am a detail oriented person. I bring a flexable working attitude.
                 working in various fields, I can easily fit into almost any team.
                 With almost two decades of work experience jumping into a new project
                 is not an issue." <br/>

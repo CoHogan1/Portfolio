@@ -47,13 +47,13 @@ function App(){
 
             {skills.map((v,i) => {
                 return  <div  className="skill-box" key={i}>
-                        <img src={v} alt="idk" loading="lazy"/>
+                        <img src={v} alt="idk" loading="lazy" className="img"/>
                         <p>{words[i]}</p>
                         </div>
             })}
         </div>
 
-        <h2>Certification</h2>
+        <h2 className="look">Certification</h2>
 
         <section className="certifications">
             {qual.map((v,i) => {
