@@ -4,6 +4,12 @@
     color: white;
 }
 
+:root {
+    --color-primary: #622870;
+    --color-secondary: #7a2048;
+    --color-thirdendary: #408ec6;
+}
+
 .App {
   font-size: 2em;
   width: 100vw;
@@ -12,6 +18,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   overflow-y: scroll;
+  /* background: var(--color-primary); */
 }
 
 .nav {
@@ -114,6 +121,7 @@
     margin: 75px auto;
     text-align: center;
     padding: 15px;
+    border: 3px solid purple;
 
 }
 .project-review {
@@ -137,6 +145,73 @@
     height: 120px;
     padding: 20px;
 }
+
+/*  reviews page */
+.review {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.review > h3 {
+    width: 100%;
+}
+
+.project-review {
+    width: 13%;
+
+}
+
+/* why hire me */
+.why {
+    text-align: center;
+}
+
+
+/* Grid Styles */
+/* .grid-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid-reversed :first-child {
+  order: 2;
+} */
+
+
+/* contact info */
+.contact {
+    text-align: center;
+    margin:50px auto;
+}
+.c-list {
+    margin: 10px auto;
+    width: 300px;
+}
+.c-list > p {
+    background-color: blue;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.clipboard {
+    margin: 100px auto;
+    width: 400px;
+    height: 400px;
+    background: white;
+}
+.clipboard > p {
+    width: 95%;
+    color: black;
+}
+
+
+
+
 
 
 /* universal  */
