@@ -177,21 +177,15 @@
     background-color: white;
 }
 @keyframes here {
-    0%{ }
-    35%{text-shadow: 20px 20px darkgrey;}
-    50%{
-        font-size: 50px;
-    }
-    75%{text-shadow: -20px 20px darkgrey;}
-    100%{
-
-    }
+    0%  {}
+    35% { text-shadow: 20px 20px darkgrey; }
+    50% { font-size: 50px;}
+    75% { text-shadow: -20px 20px darkgrey; }
+    100%{}
 }
 
 .look {
-    animation: here 3s infinite ease;
-
-
+    animation: here 3.5s infinite ease;
 }
 
 .certifications {
@@ -241,13 +235,17 @@
     width: 120px;
     height: 120px;
     padding: 20px;
-    transition: 1.5s ease;
+    transition: 1s ease;
 }
 
 .project-disc > img:hover{
     height: 700px;
     width: 700px;
     transition: 1.5s ease;
+}
+
+.project-disc > p{
+    padding:5px;
 }
 
 
@@ -267,8 +265,29 @@
 }
 
 .project-review {
-    width: 13%;
+    width: 40%;
+}
 
+.project-review > ul >li{
+    text-align: left;
+    padding: 20px;
+}
+.h2 {
+    padding: 15px;
+}
+.recommend {
+    text-align: center;
+    margin: 30px auto;
+    padding: 10px;
+    width: 100%;
+}
+
+.recommend > ul {
+    margin: auto;
+    width: 1000px;
+}
+.recommend > ul > li {
+    padding: 20px;
 }
 
 /* why hire me */
@@ -326,6 +345,7 @@
 .clipboard > p {
     width: 95%;
     color: black;
+    line-height: 400px;
 }
 
 

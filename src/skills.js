@@ -40,6 +40,9 @@ let qual = [GA, hJSb, hGold, hpy, htmlc, cssc, jsc, jqc, pyc]
 function App(){
     let [skills] = useState(skillArr)
 
+    let display = () => {
+        console.log('clicked');
+    }
     return(
         <div className="skills">
         <h2>Software Skills +</h2>
@@ -57,9 +60,8 @@ function App(){
 
         <section className="certifications">
             {qual.map((v,i) => {
-                return <div>
-                    <img src={v} alt="cert img" loading="lazy" className="certs"/>
-                    </div>
+                return  <img src={v} alt="cert img" key={i} loading="lazy" className="certs" onClick={display}/>
+
             })}
             <div className="certs" >more pending :)</div>
 

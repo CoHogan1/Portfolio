@@ -6,10 +6,8 @@ function App(){
     return(
         <div className="review">
 
-        <h3>Reviews</h3>
-
-            <div className="project-review one">
-            <h2>Debbie S. Brannon -Fellow GA Alumni.</h2>
+            <div className="recommend">
+            <h2 className="h2">Debbie S. Brannon -Fellow GA Alumni.</h2>
             <ul>
             <li>Conner and I are enrolled in a Software Engineering Bootcamp together.
             Not only does he have an execellent grasp on the material, but he shares

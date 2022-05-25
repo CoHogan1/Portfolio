@@ -100,7 +100,7 @@ function App(){
                 <h5>Front-end application</h5>
                 <p>Practice learning basic skills</p>
                 <p>I made this as a base project for online learning. I have </p>
-                <p>plans for bigger projects</p>
+                <p>bigger plans for this projects</p>
                 </div>
         </div>
         </div>
