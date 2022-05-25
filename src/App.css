@@ -3,7 +3,7 @@
     padding:0;
     color: white;
 }
-
+/*  change these, pri is purple */
 :root {
     --color-primary: #622870;
     --color-secondary: #7a2048;
@@ -21,25 +21,32 @@
   /* background: var(--color-primary); */
 }
 
+
+/* nav */
 .nav {
     top: 0;
     left: 0;
-    position: initial;
+    margin: auto;
+    /* position: initial; */
     position: sticky;
     height: 60px;
-    width: 100vw;
-    background-color: green;
+    max-width: 1300px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     line-height: 60px;
 }
 
+.bar {
+    background-color: green;
+    width: 100%;
+}
+
 /* about page */
 .about {
     padding: 10px;
     margin: 50px auto;
-    width: 93%;
+    max-width: 1200px;
 }
 
 .about > span {
@@ -50,9 +57,9 @@
 }
 
 .about-img{
-    border-radius: 50%;
-    width: 23%;
-    height: 23%;
+    border-radius: 25%;
+    width:  300px;
+    height: 300px;
 }
 
 .pitch {
@@ -69,48 +76,84 @@
     border: 3px solid yellow;
 }
 
-.about h2, h3 {
+.about > h2 {
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+}
+.about > h3 {
     width: 100%;
     text-align: center;
     padding: 25px;
 }
 
+
+
+
+
 /*  skills page */
+.skills {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 1200px;
+    /* border: 3px solid yellow; */
+}
+
 .skills > h2 {
     margin: auto;
     padding: 40px 0;
     text-align: center;
+    /* background-color: red; */
 }
 .skill-container {
     margin: 20px auto;
     width: 90%;
-    height: 400px;
+    /* height: 400px; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    justify-content: space-around;
+
 }
 .skill-box {
     display: flex;
     flex-direction: column;
     /* justify-content: flex-start; */
     /* border: 2px solid yellow; */
-    height: 50px;
-    width: 130px;
-    line-height: 50px;
-    padding: 20px;
+    /* width: 130px; */
+    line-height: 110px;
+    padding: 30px;
+    /* border: 3px solid yellow; */
+}
+.skill-box > img {
+    border-radius: 20%;
+    padding: 5px;
+    margin: auto;
+    width: 110px;
+    height: 110px;
+    background-color: white;
 }
 
 .certifications {
+    margin: 30px auto;
+    /* border: 3px solid yellow; */
+    width: 800px;
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .certs {
-    height:75px;
-    width: 75px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20%;
+    padding: 5px;
+    color: black;
+    height:120px;
+    width: 130px;
+    margin: 20px;
 }
 
 
@@ -121,30 +164,35 @@
     margin: 75px auto;
     text-align: center;
     padding: 15px;
-    border: 3px solid purple;
+    max-width: 1200px;
+    /* border: 3px solid purple; */
+    background-color: rgba(150,150,150, 0.5);
 
 }
 .project-review {
+    text-align: center;
     width: 95%;
     /* border: 3px solid yellow; */
     padding: 10px;
     margin: 15px 0;
 }
 
-.project-review > h2 {
-    padding: 15px;
-}
-.project-review > ul >li {
-    padding: 20px;
-}
-.project-disc {
-
-}
 .project-disc > img {
     width: 120px;
     height: 120px;
     padding: 20px;
+    transition: 1.5s ease;
 }
+
+.project-disc > img:hover{
+    height: 700px;
+    width: 700px;
+    transition: 1.5s ease;
+}
+
+
+
+
 
 /*  reviews page */
 .review {
@@ -166,21 +214,28 @@
 /* why hire me */
 .why {
     text-align: center;
+    margin: auto;
+    max-width: 80%;
+    /* border: 3px solid purple; */
+}
+.why >div {
+    /* border: 2px solid yellow; */
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 1200px;
+    background-color: rgba(200,200,200, 0.5);
 }
 
-
-/* Grid Styles */
-/* .grid-col-2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  align-items: center;
-  justify-content: space-between;
+.left {
+    text-align: left;
 }
-
-.grid-reversed :first-child {
-  order: 2;
-} */
+.right {
+    text-align: right;
+}
+.measure {
+    margin: auto;
+    width: 1200px;
+}
 
 
 /* contact info */
@@ -223,18 +278,16 @@ ul > li:nth-child(odd) {
     background-color: grey;
 }
 
+/*
 img {
-    width: 50px;
-    height: 50px;
-    background-color: white;
+    transition: 1.5s ease;
 }
-
-
-
-
-
-
-
+img:hover{
+    height: 700px;
+    width: 700px;
+    transition: 1.5s ease;
+}
+ */
 
 
 
@@ -257,10 +310,7 @@ img {
     .left>img {
         height: 120px;
         width: 120px;
-
     }
-
-
 }
 
 @media only screen and (max-width: 800px) {

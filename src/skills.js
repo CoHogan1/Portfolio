@@ -29,22 +29,17 @@ import hGold from './images/hackerrankGold.png'
 import hJSb from './images/hackerrankJSBasic.png'
 import hpy from './images/hackerrankPython.png'
 
-
-
 let skillArr = [html, css, js, python3, jquery, react, node, flask, mongoDB, sql, api, exp, socket, taco]
 let words = ['HTML','CSS','Java-script', 'Python3', 'jQuery','React','Node.js','Flask','MongoDb','SQL','API','EXP','Socket.io','Tacos']
 let qual = [GA, hJSb, hGold, hpy, htmlc, cssc, jsc, jqc, pyc]
-
 
 function App(){
     let [test, setTest ] = useState(0)
     let [skills, setSkills] = useState(skillArr)
 
-
-
     return(
         <div className="skills">
-        <h2>Software Skills</h2>
+        <h2>Software Skills +</h2>
         <div className="skill-container">
 
             {skills.map((v,i) => {
@@ -54,14 +49,16 @@ function App(){
                         </div>
             })}
         </div>
+
         <h2>Certification</h2>
 
         <section className="certifications">
             {qual.map((v,i) => {
                 return <div>
-                    <img src={v} alt="skills img" loading="lazy" className="certs"/>
+                    <img src={v} alt="cert img" loading="lazy" className="certs"/>
                     </div>
             })}
+            <div className="certs" >more pending :)</div>
 
         </section>
         </div>

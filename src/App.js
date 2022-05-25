@@ -96,10 +96,12 @@ class App extends Component{
         return (
     <div className="App">
 
+        <div className="bar">
         <div className="nav">
-            {this.state.arr.map((v,i) => {
-                return <p onClick={()=> this.setView(i)} key={i}>{v}</p>
-            })}
+                {this.state.arr.map((v,i) => {
+                    return <p onClick={()=> this.setView(i)} key={i}>{v}</p>
+                })}
+        </div>
         </div>
 
         {this.state.view === 0 ? <About />    : null}

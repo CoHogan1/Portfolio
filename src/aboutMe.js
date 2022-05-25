@@ -42,13 +42,6 @@ export default class About extends Component {
             </p>
             </span>
 
-                {/*
-                <div className="right">
-                <h4>~Skills~</h4>
-                <p>JavaScript, Father, Python3, React, j-Query, Flask, SQL, MongoDB, Categorizing, and Cooking Tacos</p>
-                </div>
-                */}
-
             <h2>personality Traits</h2>
             <span>
                 <ul className="traits">

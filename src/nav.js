@@ -38,6 +38,7 @@ export default class Navigation extends Component {
     render(){
         return(
             <div className="nav">
+                <div className="options"></div>
                     <p>About me</p>
                     <p>Skills</p>
                     <p>projects</p>
