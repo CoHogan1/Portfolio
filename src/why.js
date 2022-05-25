@@ -1,12 +1,8 @@
 import './App.css';
-import React, { useState } from 'react'
+//import React, { useState } from 'react'
 
 
 function App(){
-
-
-
-
     return(
         <div className="why">
 
@@ -24,8 +20,6 @@ function App(){
                 <p>A flexable effiective team member.</p>
                 <p>a good sense of humor.</p>
             </div>
-
-
 
             <div className="right" >
                 <h2>What value do I add to a team?</h2>

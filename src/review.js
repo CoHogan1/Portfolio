@@ -1,24 +1,14 @@
 import './App.css';
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
 function App(){
-
-    let [grow, setGrow ] = useState(0)
-
-    const makeBig = () => {
-        console.log("clicked")
-        // make each review full screen size.
-        // change className.
-    }
-
-
 
     return(
         <div className="review">
 
         <h3>Reviews</h3>
 
-            <div onClick={makeBig} className="project-review one">
+            <div className="project-review one">
             <h2>Debbie S. Brannon -Fellow GA Alumni.</h2>
             <ul>
             <li>Conner and I are enrolled in a Software Engineering Bootcamp together.

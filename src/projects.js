@@ -1,8 +1,7 @@
 import './App.css';
-import React, { useState } from 'react'
+//import React, { useState } from 'react'
 
 //1st project backround
-import About     from './aboutMe.js'
 import color1    from './images/2color.png'
 import brain1    from './images/brain_defogger.png'
 import vaca1     from './images/vacation.png'
