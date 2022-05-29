@@ -5,9 +5,9 @@
 }
 /*  change these, pri is purple */
 :root {
-    --color-primary: #622870;
-    --color-secondary: #7a2048;
-    --color-thirdendary: #408ec6;
+    --color-primary: #1752a4;
+    --color-secondary: #1d61c4;
+    --color-thirdendary: #db94df;
 }
 
 .App {
@@ -18,7 +18,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   overflow-y: scroll;
-  /* background: var(--color-primary); */
+  /* background: var(--color-thirdendary); */
 }
 
 /* nav */
@@ -40,13 +40,16 @@
     transition: 0.5s ease;
 }
 .nav>p:hover{
-    background-color: rgba(160,130,170, 0.5);
+    color: var(--color-primary);
+
+    /* background-color: rgba(160,130,170, 0.5); */
     transition: 0.3s ease;
 }
 
-
 .bar {
-    background-color: green;
+    background-color: var(--color-secondary);
+
+    /* background-color: green; */
     width: 100%;
 }
 
@@ -55,7 +58,7 @@
     padding: 10px;
     margin: 50px auto;
     max-width: 1200px;
-    animation: bob 2s ease;
+    /* animation: bob 2s ease; */
 }
 
 .about > span {
@@ -89,11 +92,7 @@
     font-style: italic;
     letter-spacing: 1.5px;
     word-spacing: 2px;
-    transition-property: opacity;
-    transition: 2s fadeIn;
-}
-.pitch:after{
-    opacity: 0;
+    animation: bob 2s ease;
 }
 
 .about > ul {
@@ -113,6 +112,32 @@
     padding: 25px;
 }
 
+.traits {
+    animation: bob 2s ease;
+    animation-delay: 2s;
+}
+
+.two {
+    animation: bob 2s ease;
+    animation-delay: 3s;
+}
+
+.interests{
+    animation: bob 2s ease;
+    animation-delay: 5s;
+}
+
+
+.dos {
+    animation: bob 2s ease;
+    animation-delay: 6s;
+
+}
+.three {
+    animation: bob 2s ease;
+    animation-delay: 7s;
+
+}
 
 
 
@@ -143,18 +168,16 @@
 
 @keyframes spin {
     0%{   transform: rotateZ(0); }
-
     50%{
         transform: rotateZ(180deg);
         height: 120px;
         width:120px;
     }
-
     100%{ transform: rotateZ(360deg); }
 }
 
 .img {
-    animation: spin 3s ease;
+    animation: spin 2s ease;
 }
 
 .skill-box {
@@ -176,27 +199,18 @@
     height: 110px;
     background-color: white;
 }
-@keyframes here {
-    0%  {}
-    35% { text-shadow: 20px 20px darkgrey; }
-    50% { font-size: 50px;}
-    75% { text-shadow: -20px 20px darkgrey; }
-    100%{}
-}
-
-.look {
-    animation: here 3.5s infinite ease;
-}
 
 .certifications {
     margin: 30px auto;
     /* border: 3px solid yellow; */
-    width: 800px;
+    max-width: 1100px;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     flex-wrap: wrap;
+    border-radius: 30px;
+    animation: strobe 10s ease infinite;
 }
 
 .certs {
@@ -208,6 +222,30 @@
     height:120px;
     width: 130px;
     margin: 20px;
+}
+
+/*  change these colors tho.... */
+@keyframes strobe {
+    0%{
+        background-color: rgba(225,225,225, 0.5);
+    }
+    50%{
+        background-color: rgba(200,200,200, 0.5);
+    }
+    75%{
+        background-color: rgba(150,150,150, 0.5);
+    }
+    90%{
+        background-color: rgba(200,200,200, 0.5);
+    }
+    100%{
+        background-color: rgba(225,225,225, 0.5);
+
+    }
+}
+.banner {
+    width: 200px;
+    padding: 10px;
 }
 
 
@@ -362,6 +400,10 @@ ul > li:nth-child(odd) {
     background-color: grey;
 }
 
+ul > li {
+    max-width: 100%;
+}
+
 /*
 img {
     transition: 1.5s ease;
@@ -384,21 +426,35 @@ img:hover{
 
 
 @media only screen and (max-width: 550px) {   /* cell phone only*/
-    .skills {
-        height: 30px;
-        width: 30px;
-    }
-    .skills-container {
-        grid-template-columns: repeat(3, 4fr);
-    }
-    .left>img {
-        height: 120px;
-        width: 120px;
-    }
-}
-
-@media only screen and (max-width: 800px) {
     .App {
         font-size: 1em;
+    }
+
+
+}
+
+@media only screen and (max-width: 960px) {
+    .App {
+        font-size: 1.5em;
+    }
+    .about-img {
+        width: 150px;
+        height: 150px;
+    }
+    .skill-box > img {
+        /* border-radius: 20%;
+        padding: 5px;
+        margin: auto; */
+        width: 60px;
+        height: 60px;
+        /* background-color: white; */
+    }
+    .certs {
+        text-align: center;
+        padding: 5px;
+        color: black;
+        height:120px;
+        width: 130px;
+        margin: 20px;
     }
 }

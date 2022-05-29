@@ -35,10 +35,10 @@ function App(){
 
             <p>Click to copy</p>
             <div className="c-list">
-                <p onClick={copyPhone}>Phone</p>
-                <p onClick={copyEmail} ><a href="mailto: ConnerRHogan@gmail.com">Email</a></p>
-                <p onClick={copyLinkedin} ><a href='http://www.linkedin.com/in/conner-hogan-40b39b37'>Linkedin</a></p>
-                <p onClick={copyGithub} ><a href='http://www.github.com/CoHogan1' >Github</a></p>
+                <p onClick={copyPhone}>Phone </p>
+                <p onClick={copyEmail} ><a href="mailto: ConnerRHogan@gmail.com">Email</a> </p>
+                <p onClick={copyLinkedin} ><a href='http://www.linkedin.com/in/conner-hogan-40b39b37'>Linkedin</a> </p>
+                <p onClick={copyGithub} ><a href='http://www.github.com/CoHogan1' >Github</a> </p>
                 <p onClick={copyPhone} >Colorado</p>
             </div>
 

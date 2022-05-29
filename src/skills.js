@@ -36,12 +36,15 @@ let words = ['HTML','CSS','Java-script', 'Python3', 'jQuery','React','Node.js',
 'Flask','MongoDb','SQL','API','EXP','Socket.io','Tacos']
 
 let qual = [GA, hJSb, hGold, hpy, htmlc, cssc, jsc, jqc, pyc]
+let name= ["General-Assembly FullStack", 'Hackerrank Javascript', 'Hackerrank Problem Solving',
+'Hackerrank Python','HTML SoloLearn', 'CSS SoloLearn','Java-script SoloLearn','jQuery SoloLearn',
+'Python SoloLearn']
 
 function App(){
     let [skills] = useState(skillArr)
 
-    let display = () => {
-        console.log('clicked');
+    let display = (event) => {
+        console.log(event, " should be a num");
     }
     return(
         <div className="skills">
@@ -50,7 +53,7 @@ function App(){
 
             {skills.map((v,i) => {
                 return  <div  className="skill-box" key={i}>
-                        <img src={v} alt="idk" loading="lazy" className="img"/>
+                        <img src={v} alt="idk" loading="lazy"  key={i+v} className="img"/>
                         <p>{words[i]}</p>
                         </div>
             })}
@@ -60,12 +63,19 @@ function App(){
 
         <section className="certifications">
             {qual.map((v,i) => {
-                return  <img src={v} alt="cert img" key={i} loading="lazy" className="certs" onClick={display}/>
+
+                return  <div className="banner" key={i} >
+                        <img src={v} alt="cert img" loading="lazy" className="certs" onClick={display}/>
+                        <p>{name[i]}</p>
+                        </div>
 
             })}
-            <div className="certs" >more pending :)</div>
+            <div className="certs">more pending :)</div>
 
         </section>
+        <div className="cert-modal">
+
+        </div>
         </div>
     )
 }

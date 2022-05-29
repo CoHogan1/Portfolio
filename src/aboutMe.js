@@ -25,7 +25,7 @@ export default class About extends Component {
             </p>
             </span>
 
-            <h2>personality Traits</h2>
+            <h2>Personality Traits</h2>
             <span>
                 <ul className="traits">
                     <li>creative approach to problem solving</li>
@@ -41,7 +41,7 @@ export default class About extends Component {
                     <li>Team player</li>
                 </ul>
 
-                <ul>
+                <ul className="traits two">
                     <li>other traits on re review</li>
                     <li>other traits on re review</li>
                     <li>other traits on re review</li>
@@ -53,7 +53,7 @@ export default class About extends Component {
             </span>
 
 
-            <h3>Interests </h3>
+            <h3>Interests</h3>
             <span>
                 <ul className="interests">
                     <li>Bands</li>
@@ -64,7 +64,7 @@ export default class About extends Component {
                     <li>more</li>
                 </ul>
 
-                <ul>
+                <ul className="interests dos">
                     <li>Movies</li>
                     <li>....</li>
                     <li>Movies</li>
@@ -72,7 +72,7 @@ export default class About extends Component {
                     <li>Movies</li>
                     <li>Movies</li>
                 </ul>
-                <ul>
+                <ul className="interests three">
                     <li>Other</li>
                     <li>....</li>
                     <li>My son</li>

@@ -35,7 +35,7 @@ class App extends Component{
         <div className="bar">
         <div className="nav">
                 {this.state.arr.map((v,i) => {
-                    return <p onClick={()=> this.setView(i)} key={i}>{v}</p>
+                    return <p onClick={()=> this.setView(i)} key={i+v} >{v}</p>
                 })}
         </div>
         </div>
