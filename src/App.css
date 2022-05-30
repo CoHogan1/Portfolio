@@ -219,7 +219,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .skill-container {
     margin: 20px auto;
-    width: 1100px;
+    max-width: 1100px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -230,8 +230,8 @@ h1,h2,h3,h4,h5,h6 {
     0%{   transform: rotateZ(0); }
     50%{
         transform: rotateZ(180deg);
-        height: 100px;
-        width:100px;
+        height: 70px;
+        width: 70px;
     }
     100%{ transform: rotateZ(0deg); }
 }
