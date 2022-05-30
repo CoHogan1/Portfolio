@@ -4,7 +4,7 @@ function App(){
     return(
         <div className="why">
 
-            <div className="left" >
+            <div className="left bg2" >
                 <h2>What Do I bring?</h2>
                 <p>A strong desire to learn new things.</p>
                 <p>A deep understanding of how things work.</p>
@@ -12,14 +12,14 @@ function App(){
 
             </div>
 
-            <div className="center">
+            <div className="center bg3">
                 <h2>What do I bring to Software?</h2>
                 <p>An eye for small details.</p>
                 <p>A flexable effiective team member.</p>
                 <p>a good sense of humor.</p>
             </div>
 
-            <div className="right" >
+            <div className="right bg" >
                 <h2>What value do I add to a team?</h2>
                 <p>Passion for innovation.</p>
                 <p>A dedication for the highest standards.</p>

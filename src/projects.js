@@ -20,7 +20,7 @@ function App(){
     return(
         <div className="projects">
 
-        <div className="project">
+        <div className="project bg">
             <div className="project-disc">
                 <h2>A Color Game</h2>
                 <img src={color1} alt="project1" loading="lazy"></img>
@@ -34,7 +34,7 @@ function App(){
             </div>
         </div>
 
-        <div className="project">
+        <div className="project bg2">
             <h3>Brain Defogger Methods</h3>
             <div className="project-disc">
                 <img src={brain1} alt="project2" loading="lazy"></img>
@@ -49,7 +49,7 @@ function App(){
             </div>
         </div>
 
-        <div className="project">
+        <div className="project bg">
             <h3>Black Box Vacations</h3>
             <div className="project-disc">
                 <img src={vaca1} alt="project3" loading="lazy"></img>
@@ -63,7 +63,7 @@ function App(){
             </div>
         </div>
 
-        <div className="project">
+        <div className="project bg2">
             <h3>Multiplayer Checkers</h3>
             <div className="project-disc">
                 <img src={checkers1} alt="project4" loading="lazy"></img>
@@ -76,7 +76,7 @@ function App(){
             </div>
         </div>
 
-        <div className="project">
+        <div className="project bg">
             <h3>Mad-lib reader</h3>
             <div className="project-disc">
             <img src={madLib} alt="project5" loading="lazy"></img>
@@ -90,7 +90,7 @@ function App(){
             </div>
         </div>
 
-        <div className="project">
+        <div className="project bg2">
             <h3>HackerRank algos</h3>
                 <div className="project-disc">
                 <img src={hacker} alt="project img" loading="lazy"></img>
@@ -102,7 +102,7 @@ function App(){
                 </div>
         </div>
 
-        <div className="project">
+        <div className="project bg">
             <h3>Lili's Learing</h3>
                 <div className="project-disc">
                 <p>Images Pending.</p>
@@ -113,7 +113,7 @@ function App(){
                 <p>I have bigger plans for this project.</p>
                 </div>
         </div>
-        
+
         </div>
     )
 }

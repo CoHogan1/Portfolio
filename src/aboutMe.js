@@ -25,8 +25,8 @@ export default class About extends Component {
             </p>
             </span>
 
-            <h2>Personality Traits</h2>
-            <span>
+            <h2 className="bg" >Personality Traits</h2>
+            <span className="bg" >
                 <ul className="traits">
                     <li>Creative approach to problem solving</li>
                     <li>Dependable</li>
@@ -55,10 +55,11 @@ export default class About extends Component {
                 </ul>
 
             </span>
+            <div className="gap"></div>
 
 
-            <h3>Interests</h3>
-            <span>
+            <h2 className="bg">Interests</h2>
+            <span className='bg'>
                 <ul className="interests">
                     <li>Bands</li>
                     <li>....</li>

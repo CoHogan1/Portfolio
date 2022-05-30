@@ -14,12 +14,10 @@ class App extends Component{
     constructor(props){
         super(props)
         this.state = {
-            arr: ['About','Skills','Projects','Review','Kpa','Why?','Contact'],
+            arr: ['About','Skills','Projects','Review','DISC','Why?','Contact'],
             view: 0,
         }
     }
-
-
 
     setView = (val) => {
         if (this.state.view === val) {
@@ -49,12 +47,6 @@ class App extends Component{
         {this.state.view === 5 ? <Why />      : null}
         {this.state.view === 6 ? <Contact />  : null}
 
-        {/*  <About/>    */}
-        {/* <Skills />   */}
-        {/* <Projects /> */}
-        {/*  <Review />  */}
-        {/* <Why />      */}
-        {/* <Contact />  */}
     </div>
         )
     }

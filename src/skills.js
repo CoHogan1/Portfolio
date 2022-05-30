@@ -46,8 +46,8 @@ function App(){
     return(
         <div className="skills">
 
-        <h2>Software Skills +</h2>
-        <div className="skill-container">
+        <h2 className="bg">Software Skills +</h2>
+        <div className="skill-container bg">
 
             {skills.map((v,i) => {
                 return  <div  className="skill-box" key={i}>
@@ -57,9 +57,9 @@ function App(){
             })}
         </div>
 
-        <h2 className="look">Certification</h2>
+        <h2 className="and bg">Certification</h2>
 
-        <section className="certifications">
+        <section className="certifications bg">
             {qual.map((v,i) => {
 
                 return  <div className="banner" key={i} >
@@ -69,7 +69,6 @@ function App(){
 
             })}
             <div className="certs">More pending :)</div>
-
         </section>
 
         </div>
