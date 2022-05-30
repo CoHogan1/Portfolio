@@ -25,37 +25,31 @@ class App extends Component{
             this.setState({ view: 0,  })
             return
         }
-        this.setState({ view: val })
+        this.setState({ view: val, value: false })
     }
 
     toggle = () => {
         this.setState({
             value: !this.state.value
         })
-        console.log(this.state.value);
     }
-
-
-
 
     render(){
         return (
     <div className="App">
 
         <div className="navbar">
-        <div className= {this.state.value ? "nav-menu.active" : "nav-menu" }>
+        <div className={this.state.value ? "nav-menu-active": "nav-menu"}>
                 {this.state.arr.map((v,i) => {
                     return <p  className="nav-item" onClick={()=> this.setView(i)} key={i+v} >{v}</p>
                 })}
-
-
+                <div className={this.state.value ? 'ham-after' : "ham"} onClick={this.toggle}>
+                    <span className="meat"></span>
+                    <span className="meat"></span>
+                    <span className="meat"></span>
+                </div>
         </div>
 
-        <div className={this.state.value ? "hamburger.active" : "hamburger" } onClick={this.toggle}>
-            <span className="bar"></span>
-            <span className="bar"></span>
-            <span className="bar"></span>
-        </div>
 
         </div>
 
