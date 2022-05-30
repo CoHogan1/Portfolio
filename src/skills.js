@@ -51,7 +51,7 @@ function App(){
 
             {skills.map((v,i) => {
                 return  <div  className="skill-box" key={i}>
-                        <img src={v} alt="idk" loading="lazy"  key={i+v} className="img"/>
+                        <img src={v} alt="idk" loading="lazy"  key={i} className="img"/>
                         <p>{words[i]}</p>
                         </div>
             })}

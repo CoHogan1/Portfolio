@@ -2,6 +2,8 @@
     margin:0;
     padding:0;
     color: var(--color-wht);
+    /* font-family: 'Trebuchet MS', sans-serif; */
+    font-family: Georgia, serif;
 }
 .App::-webkit-scrollbar{
     box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
@@ -56,6 +58,7 @@ h1,h2,h3,h4,h5,h6 {
     width: 100%;
     height: 60px;
 }
+
 .nav-menu {
     margin: 0 auto;
     max-width: 1200px;
@@ -65,11 +68,14 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 60px;
 }
 .nav-menu-active {
-    position: relative;
+    width: 100%;
     text-align: center;
     background-color: var(--color-fir);
+    position: absolute;
 }
+
 .nav-menu-active > p {
+    width: 100%;
     margin-bottom: 10px;
 }
 .nav-item {
@@ -88,7 +94,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .ham-after {
-    position: fixed;
+    position: absolute;
     top: 15px;
     right: 15px;
 }
@@ -224,10 +230,10 @@ h1,h2,h3,h4,h5,h6 {
     0%{   transform: rotateZ(0); }
     50%{
         transform: rotateZ(180deg);
-        height: 120px;
-        width:120px;
+        height: 100px;
+        width:100px;
     }
-    100%{ transform: rotateZ(360deg); }
+    100%{ transform: rotateZ(0deg); }
 }
 
 .img {

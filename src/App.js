@@ -66,3 +66,7 @@ class App extends Component{
     }
 }
 export default App;
+
+
+
+// <div className={this.state.value ? "navbar-active": "navbar"}>
