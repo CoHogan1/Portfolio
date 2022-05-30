@@ -7,6 +7,7 @@ import brain1    from './images/brain_defogger.png'
 import vaca1     from './images/vacation.png'
 import checkers1 from './images/checkers.png'
 import madLib    from './images/madlib1.png'
+import hacker    from './images/hackerProject.png'
 // 2nd project backgroundls
 import color2    from './images/color_2.png'
 import brain2    from './images/dark-brain.png'
@@ -103,6 +104,20 @@ function App(){
                 <p>bigger plans for this projects</p>
                 </div>
         </div>
+
+        <div className="project six">
+            <h3>HackerRank algos</h3>
+                <div className="project-disc">
+                <img src={hacker} alt="project img" loading="lazy"></img>
+                <h4>Javascript</h4>
+                <h5>algorithms</h5>
+                <p>Practicint Javascript problem solving skils</p>
+                <p>Over 130 algorithm solutions passing all test cases, and time</p>
+                <p>limits. :)</p>
+                </div>
+        </div>
+
+
         </div>
     )
 }

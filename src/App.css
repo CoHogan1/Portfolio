@@ -412,20 +412,11 @@ ul > li:nth-child(odd) {
 ul > li {
     max-width: 100%;
 }
-
-/*
-img {
-    transition: 1.5s ease;
+li {
+    padding: 3.5px 10px;
 }
-img:hover{
-    height: 700px;
-    width: 700px;
-    transition: 1.5s ease;
-}
- */
 
-
-
+/*  build nav for  720 and less to be a normal x menu. */
 
 
 
@@ -445,6 +436,9 @@ img:hover{
 @media only screen and (max-width: 960px) {
     .App {
         font-size: 1.5em;
+    }
+    .anv > p {
+        padding: 0 5px;
     }
     .about-img {
         width: 150px;

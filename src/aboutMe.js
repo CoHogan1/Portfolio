@@ -28,25 +28,29 @@ export default class About extends Component {
             <h2>Personality Traits</h2>
             <span>
                 <ul className="traits">
-                    <li>creative approach to problem solving</li>
-                    <li>dependable</li>
+                    <li>Creative approach to problem solving</li>
+                    <li>Dependable</li>
                     <li>Loves Tacos</li>
-                    <li>time management</li>
-                    <li>eager to learn new skills</li>
-                    <li>lots of experience</li>
-                    <li>flexable</li>
-                    <li>leader</li>
-                    <li>consistent</li>
+                    <li>Time management</li>
+                    <li>Eager to learn new skills</li>
+                    <li>Lots of experience</li>
+                    <li>Flexable</li>
+                    <li>Leader</li>
+                    <li>Consistent</li>
                     <li>Result driven</li>
                     <li>Team player</li>
                 </ul>
 
                 <ul className="traits two">
-                    <li>other traits on re review</li>
-                    <li>other traits on re review</li>
-                    <li>other traits on re review</li>
-                    <li>other traits on re review</li>
-                    <li>other traits on re review</li>
+                    <li>Rapid problem solving</li>
+                    <li>Socialibility</li>
+                    <li>Assertiveness</li>
+                    <li>Responsiveness</li>
+                    <li>Responsiveness</li>
+                    <li>Structure</li>
+                    <li>Adapability</li>
+                    <li>Optimism</li>
+                    <li>Spatial visualization</li>
 
                 </ul>
 
