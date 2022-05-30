@@ -62,28 +62,27 @@ export default class About extends Component {
             <span className='bg'>
                 <ul className="interests">
                     <li>Bands</li>
-                    <li>....</li>
+                    <li>~~~~</li>
                     <li>NIN</li>
                     <li>Metallica</li>
                     <li>tool</li>
-                    <li>more</li>
                 </ul>
 
                 <ul className="interests dos">
                     <li>Movies</li>
-                    <li>....</li>
+                    <li>~~~~</li>
                     <li>Movies</li>
                     <li>Movies</li>
                     <li>Movies</li>
                     <li>Movies</li>
                 </ul>
                 <ul className="interests three">
-                    <li>Other</li>
-                    <li>....</li>
+                    <li>Home</li>
+                    <li>~~~~</li>
                     <li>My son</li>
                     <li>my daughter</li>
                     <li>3d pen</li>
-                    <li>building</li>
+                    <li>Hockey</li>
                 </ul>
 
             </span>

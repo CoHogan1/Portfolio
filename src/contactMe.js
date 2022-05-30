@@ -1,9 +1,10 @@
 import './App.css';
 import React, { useState } from 'react'
-// add icons to each option.
+
+import copy  from './images/copy.jpg'
 
 function App(){
-    let [clip, setClip ]  = useState(null)
+    let [clip, setClip]  = useState(null)
 
 
     const copyPhone = () => {
@@ -30,20 +31,28 @@ function App(){
         setClip('Github link')
     }
 
+
     return(
         <div className="contact">
 
-            <p>Click to copy</p>
-            <div className="c-list bg">
-                <p onClick={copyPhone}>Phone </p>
-                <p onClick={copyEmail} ><a href="mailto: ConnerRHogan@gmail.com">Email</a> </p>
-                <p onClick={copyLinkedin} ><a href='http://www.linkedin.com/in/conner-hogan-40b39b37'>Linkedin</a> </p>
-                <p onClick={copyGithub} ><a href='http://www.github.com/CoHogan1' >Github</a> </p>
+            <div className="c-list">
+                <p>Phone<img className="icon" onClick={copyPhone} src={copy} alt="copy icon"/></p>
+
+                <p><a href="mailto: ConnerRHogan@gmail.com">Email</a>
+                <img className="icon" onClick={copyEmail} src={copy} alt="copy icon"/></p>
+
+                <p><a href='http://www.linkedin.com/in/conner-hogan-40b39b37'>Linkedin</a>
+                <img className="icon" onClick={copyLinkedin} src={copy} alt="copy icon"/> </p>
+
+                <p><a href='http://www.github.com/CoHogan1' >Github</a>
+                <img className="icon" onClick={copyGithub} src={copy} alt="copy icon"/> </p>
             </div>
 
-            <div className='clipboard'>
-                {/* clipboard image here*/}
-                <p>{clip}</p>
+
+            <div className="back">
+                <div className='clipboard'>
+                    <p>{clip}</p>
+                </div>
             </div>
 
 

@@ -1,5 +1,6 @@
 import './App.css';
 //import React, { useState } from 'react'
+import copy  from './images/copy.jpg'
 
 function App(){
 
@@ -14,8 +15,8 @@ function App(){
     return (
         <div className="kpa">
             <h2 onClick={copyDisc} className="headline bg3">
-                <a href="https://www.discprofile.com/what-is-disc">DISC Assessment</a>&nbsp;
-                copy</h2>
+                <a href="https://www.discprofile.com/what-is-disc">DISC Assessment</a>
+                <img className="icon" onClick={copyDisc} src={copy} alt="copy icon"/></h2>
 
             <div className="d-review bg">
                     Conner will work well with things ans ideas. He will exhibit patience

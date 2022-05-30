@@ -33,50 +33,49 @@ h1,h2,h3,h4,h5,h6 {
   height: 100vh;
   background-repeat: no-repeat;
   overflow-y: scroll;
-
-  /* background: var(--color-thirdendary); */
-
-  /* background: url('./images/backgrounds/maybe.gif') rgba(0, 0, 255, 0.5); */
-  /* background: url('./images/backgrounds/mtnBoat.gif') rgba(0, 0, 255, 0.5); */
-
-  /* background: url('./images/backgrounds/mtnLake.gif') rgba(0, 0, 255, 0.5); */
-  /* background: url('./images/backgrounds/mtnLake2.gif') rgba(0, 0, 255, 0.7);  */
-
-  /* background: url('./images/backgrounds/mtnNight.gif') rgba(0, 0, 255, 0.5); */
-  /* background: url('./images/backgrounds/mtnRiver.gif') rgba(0, 0, 255, 0.5); */
-  /* background: url('./images/backgrounds/mtnVillage.gif') rgba(0, 0, 255, 0.5); */
-  /* background: url('./images/backgrounds/rightWaves.gif') rgba(0, 0, 255, 0.5); */
-  background: url('./images/backgrounds/water-47.gif') rgba(180, 0, 255, 0.5);
+  background: url('./images/backgrounds/water-47.gif') rgba(180, 20, 255, 0.4);
   background-blend-mode: multiply;
   background-size: cover;
 }
 
 /* nav */
-.nav {
+.navbar {
     top: 0;
     left: 0;
-    margin: auto;
-    /* position: initial; */
-    position: sticky;
+    position: initial;
+    background-color: var(--color-fir);
+    width: 100%;
     height: 60px;
-    max-width: 1300px;
+}
+.nav-menu {
+    margin: 0 auto;
+    max-width: 1200px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     line-height: 60px;
 }
-.nav > p {
+.nav-item {
     padding: 0 20px;
     transition: 0.5s ease;
 }
 .nav > p:hover{
-    color: var(--color-thi);
+    color: var(--color-pur);
     transition: 0.3s ease;
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
 .bar {
-    background-color: var(--color-fir);
-    width: 100%;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
 }
 
 
@@ -115,7 +114,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .pitch {
-    padding: 35px 30px 35px 40px;
+    padding: 30px;
     margin-left: 20px;
     font-style: italic;
     letter-spacing: 1.5px;
@@ -123,10 +122,6 @@ h1,h2,h3,h4,h5,h6 {
     animation: bob 2s ease;
 }
 
-.about > ul {
-    list-style: none;
-    margin: 20px auto;
-}
 
 .about > h2 {
     width: 100%;
@@ -299,24 +294,10 @@ h1,h2,h3,h4,h5,h6 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-
-}
-
-.review > h3 {
-    width: 100%;
 }
 
 .project-review {
-    width: 40%;
-}
-
-.project-review > ul >li{
-    text-align: left;
-    padding: 20px;
-}
-
-.h2 {
-    padding: 15px;
+    width: 45%;
 }
 
 .recommend {
@@ -325,14 +306,8 @@ h1,h2,h3,h4,h5,h6 {
     padding: 10px;
 }
 
-.recommend > ul {
-    margin: auto;
-    max-width: 1100px;
-}
 
-.recommend > ul > li {
-    padding: 20px;
-}
+
 
 /*  KPA */
 .kpa {
@@ -366,13 +341,17 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
+
+
+
 /* why hire me */
 .why {
     text-align: center;
     margin: auto;
-    max-width: 80%;
+    max-width: 1200px;
 }
-.why >div {
+
+.why > div {
     padding: 40px;
     margin: 50px auto;
     max-width: 1200px;
@@ -384,11 +363,6 @@ h1,h2,h3,h4,h5,h6 {
 .right {
     text-align: right;
 }
-.measure {
-    margin: auto;
-    width: 1200px;
-}
-
 
 /* contact info */
 .contact {
@@ -396,26 +370,47 @@ h1,h2,h3,h4,h5,h6 {
     margin:50px auto;
 }
 .c-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    margin: 15px auto;
+    text-align: center;
 }
 .c-list > p {
-    padding: 10px;
+    padding: 10px 10%;
     margin: 10px auto;
-    background-color: var(--color-blk);
+    background-color: var(--color-blu);
+    width: 190px;
+    border-radius: 20px;
+}
+
+.back {
+    margin: auto;
+    background-color: black;
+    border-radius: 25px;
+    width: 350px;
 }
 
 .clipboard {
+    position: relative;
+    left: 10px;
     margin: 100px auto;
-    width: 400px;
-    height: 400px;
-    background: white;
+    background: url('./images/images.png');
+    width: 260px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+
 .clipboard > p {
     width: 95%;
     color: black;
     line-height: 400px;
+}
+
+.icon {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 25%;
+    margin-left: 30px;
+    top: 5px;
 }
 
 
@@ -443,15 +438,29 @@ li {
 
 /*  build nav for  720 and less to be a normal x menu. */
 
-/*  media media media media media media media media media *********************/
-/* s10 is 360 px by 760px  cell phone */
-/* 1200-1500 by 2000+ tablet */
-
-
 @media only screen and (max-width: 550px) {   /* cell phone only*/
     .App {
         font-size: 1em;
     }
+    .about > span {
+        display: flex;
+        flex-direction: column;
+    }
+    .pitch {
+        padding: 5px;
+    }
+    .traits, .interests{
+        margin-top: 60px;
+    }
+
+}
+/*  hamburger menu for cell */
+@media only screen and (max-width: 768px){
+    .hamburger {
+        display: block;
+        border: 3px solid yellow;
+    }
+
 
 
 }

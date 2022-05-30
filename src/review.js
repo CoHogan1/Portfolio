@@ -7,7 +7,7 @@ function App(){
         <div className="rev">
 
             <div className="recommend bg3">
-            <h2 className="h2">Debbie S. Brannon -Fellow GA Alumni.</h2>
+            <h2>Debbie S. Brannon -Fellow GA Alumni.</h2>
             <ul>
             <li>Conner and I are enrolled in a Software Engineering Bootcamp together.
             Not only does he have an execellent grasp on the material, but he shares
