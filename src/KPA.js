@@ -52,9 +52,94 @@ function App(){
                 through more complex problems.
             </div>
 
-            <div>
+
+
+            <div className="value">
+                <h3>Rapid Problem Solving</h3>
+                <p>&emsp;Conner is able to use a quick and intuitive approach to solving</p>
+                <p>problems. He likes having new issues to takle every day. He can</p>
+                <p>easily dispose of smllae challanges and move to the next one.</p>
+            </div>
+            <div className="value">
+                <h3>Socialibility</h3>
+                <p>&emsp;Conner displays an easygoing and affable social style, and strives</p>
+                <p>to maintainpositive and stable relationships. He is not motivated</p>
+                <p>to play a prominent or influential role in a group activities</p>
+                <p>Most often he prefers to work quietly and independantly behind</p>
+                <p>the scenes.</p>
             </div>
 
+            <div className="value">
+                <h3>Vocabulary</h3>
+                <p>&emsp;Conner is inquisitive and bright. He is an avid learner who picks</p>
+                <p>up new concepts easily and quickly. He is intetested in a wide variety</p>
+                <p>of topics and he constantly seeks out new ideas. When processing</p>
+                <p>new information he tends to dig deeper into the material to deepen</p>
+                <p>his understanding. He is able to grasp subtly and nuance in communications,</p>
+                <p>which can positively impact the precision which he interacts with others.</p>
+            </div>
+
+            <div className="value">
+                <h3>Assertiveness</h3>
+                <p>&emsp;Conner is a modest and unpretentious person who is not prone to be</p>
+                <p>insistent or to impost his point of view. He can be quietly determined,</p>
+                <p>however, in completing tasks and in maintaining his personal</p>
+                <p>standards and convictions.</p>
+            </div>
+
+            <div className="value">
+                <h3>Responsiveness</h3>
+                <p>&emsp;Conner is controlled and cautious in his reactions. He is not very</p>
+                <p>excitable or demonstrative, and he prefers to remain low key and </p>
+                <p>unobtrusive in his initiatives. He has good tolerance for support</p>
+                <p>roles and for extended periods of concentration on specialized tasks.</p>
+            </div>
+
+            <div className="value">
+                <h3>Structure</h3>
+                <p>&emsp;Conner has a moderate need for structure, and he can adapt to working</p>
+                <p>with relative independence and taking ownership over familiar job </p>
+                <p>functions. He tends to be orderly and deliberate, and can focus well</p>
+                <p>on important details and routines.</p>
+            </div>
+
+            <div className="value">
+                <h3>Logical Problem Solving</h3>
+                <p>&emsp;Rather than pulling poblems apart and solving them in a step-by-step</p>
+                <p>manner, Conner will insted look for a quicker way to resolve complex</p>
+                <p> problems.</p>
+            </div>
+
+            <div className="value">
+                <h3>Intensity</h3>
+                <p>&emsp;Conner will tend to avoid direct conflict while on the job. He seeks</p>
+                <p>to understand the cause of an issue before determining a course of action</p>
+                <p>He feels most comfortable in cooperative situations.</p>
+            </div>
+
+            <div className="value">
+                <h3>Adapability</h3>
+                <p>&emsp;He is an independant-minded, and he will generally cooperate with others</p>
+                <p>on a practical basis. He has definite ideas and standards of his own</p>
+                <p>however, he will not be quick to compromise.</p>
+            </div>
+
+            <div className="value">
+                <h3>Optimism</h3>
+                <p>&emsp;Conner is not outwardly effusive or gregarious and tends to maintain</p>
+                <p>a healthy skepticism in his approach and outlook. He has the ability to</p>
+                <p>visualize things and anticipate what migh go wrong or what may not</p>
+                <p> turned out as planned.</p>
+            </div>
+
+            <div className="value">
+                <h3>Spatial visualization</h3>
+                <p>&emsp;Conner can visualize three dimensional structures and complex systems.</p>
+                <p>He can think about problems in which there are multiple variables</p>
+                <p>that are changing. He is also able to use technology solutions to solve</p>
+                <p>problems. This talent will help him with a variety of tasks, including</p>
+                <p>financial, technical, mechanical, mathematical, and engineering problems.</p>
+            </div>
         </div>
     )
 }

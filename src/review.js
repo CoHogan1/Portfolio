@@ -20,7 +20,7 @@ function App(){
 
 
 
-            <div className="project-review two">
+            <div className="project-review">
             <h2>Tracey Lucero ~ 2017</h2>
             <ul>
                 <li>Conner has a great personality, and is very approachable and a hard worker.
@@ -60,7 +60,7 @@ function App(){
             </ul>
             </div>
 
-            <div className="project-review three">
+            <div className="project-review">
             <h2>Bryce Dyer ~ 2018</h2>
             <ul>
                 <li>Conner works well with others and is easy to work with. He does a good job
@@ -96,7 +96,7 @@ function App(){
 
             </div>
 
-            <div className="project-review four">
+            <div className="project-review">
             <h2>Bryce Dyer ~ 2019</h2>
             <ul>
                 <li>Conner is a team player willling to help out on any project and willing
@@ -132,7 +132,7 @@ function App(){
             </ul>
             </div>
 
-            <div className="project-review five">
+            <div className="project-review">
             <h2>Alejandro Tovar ~ 2020</h2>
             <ul>
                 <li>2020 has been a challenging year. The COVID 19 pandemic has pushed us into
@@ -168,7 +168,7 @@ function App(){
                 </li>
             </ul>
             </div>
-            <div className="project-review six">
+            <div className="project-review">
             <h2>Dean Trebilcock ~ 2021</h2>
             <ul>
                 <li>pending..... 06/2022</li>

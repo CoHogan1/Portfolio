@@ -43,11 +43,9 @@ let name= ["General-Assembly FullStack", 'Hackerrank Javascript', 'Hackerrank Pr
 function App(){
     let [skills] = useState(skillArr)
 
-    let display = (event) => {
-        console.log(event, " should be a num");
-    }
     return(
         <div className="skills">
+
         <h2>Software Skills +</h2>
         <div className="skill-container">
 
@@ -65,17 +63,15 @@ function App(){
             {qual.map((v,i) => {
 
                 return  <div className="banner" key={i} >
-                        <img src={v} alt="cert img" loading="lazy" className="certs" onClick={display}/>
+                        <img src={v} alt="cert img" loading="lazy" className="certs" />
                         <p>{name[i]}</p>
                         </div>
 
             })}
-            <div className="certs">more pending :)</div>
+            <div className="certs">More pending :)</div>
 
         </section>
-        <div className="cert-modal">
 
-        </div>
         </div>
     )
 }

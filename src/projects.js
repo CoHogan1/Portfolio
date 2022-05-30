@@ -1,5 +1,4 @@
 import './App.css';
-//import React, { useState } from 'react'
 
 //1st project backround
 import color1    from './images/2color.png'
@@ -17,13 +16,11 @@ import checkers2 from './images/dark-checkers.png'
 import brain3    from './images/project2update.png'
 import color3    from './images/colorGame.png'
 
-
 function App(){
     return(
         <div className="projects">
 
-
-        <div className="project one">
+        <div className="project">
             <div className="project-disc">
                 <h2>A Color Game</h2>
                 <img src={color1} alt="project1" loading="lazy"></img>
@@ -33,12 +30,11 @@ function App(){
                 <h4>Fullstack application</h4>
                 <p>I played a game silimar to this when I was younger.</p>
                 <p>I wanted to share the game that I enjoyed so much.</p>
-                <p>Test your vision, your reading speed, and your reaction time</p>
+                <p>Test your vision, your reading speed, and your reaction time.</p>
             </div>
         </div>
 
-
-        <div className="project two">
+        <div className="project">
             <h3>Brain Defogger Methods</h3>
             <div className="project-disc">
                 <img src={brain1} alt="project2" loading="lazy"></img>
@@ -48,11 +44,12 @@ function App(){
                 <h4>HTML, CSS, JSX, MongoDb, Node.js, Express, Java-script</h4>
                 <h5>Fullstack application</h5>
                 <p>My first full CRUD project.</p>
-                <p>This app allows you to keep track of idea, and methods to help relieve brain fog</p>
+                <p>This app allows you to keep track of idea,</p>
+                <p>and methods to help relieve brain fog.</p>
             </div>
         </div>
 
-        <div className="project three">
+        <div className="project">
             <h3>Black Box Vacations</h3>
             <div className="project-disc">
                 <img src={vaca1} alt="project3" loading="lazy"></img>
@@ -66,7 +63,7 @@ function App(){
             </div>
         </div>
 
-        <div className="project four">
+        <div className="project">
             <h3>Multiplayer Checkers</h3>
             <div className="project-disc">
                 <img src={checkers1} alt="project4" loading="lazy"></img>
@@ -79,7 +76,7 @@ function App(){
             </div>
         </div>
 
-        <div className="project five">
+        <div className="project">
             <h3>Mad-lib reader</h3>
             <div className="project-disc">
             <img src={madLib} alt="project5" loading="lazy"></img>
@@ -93,31 +90,30 @@ function App(){
             </div>
         </div>
 
-        <div className="project six">
+        <div className="project">
+            <h3>HackerRank algos</h3>
+                <div className="project-disc">
+                <img src={hacker} alt="project img" loading="lazy"></img>
+                <h4>Javascript practice</h4>
+                <h5>algorithms skills and methods</h5>
+                <p>Practicint Javascript problem solving skils</p>
+                <p>Over 130 algorithm solutions passing all test cases,</p>
+                <p>and time limits. :)</p>
+                </div>
+        </div>
+
+        <div className="project">
             <h3>Lili's Learing</h3>
                 <div className="project-disc">
                 <p>Images Pending.</p>
                 <h4>Javascript, React</h4>
                 <h5>Front-end application</h5>
                 <p>Practice learning basic skills</p>
-                <p>I made this as a base project for online learning. I have </p>
-                <p>bigger plans for this projects</p>
+                <p>I made this as a base project for online learning.</p>
+                <p>I have bigger plans for this project.</p>
                 </div>
         </div>
-
-        <div className="project six">
-            <h3>HackerRank algos</h3>
-                <div className="project-disc">
-                <img src={hacker} alt="project img" loading="lazy"></img>
-                <h4>Javascript</h4>
-                <h5>algorithms</h5>
-                <p>Practicint Javascript problem solving skils</p>
-                <p>Over 130 algorithm solutions passing all test cases, and time</p>
-                <p>limits. :)</p>
-                </div>
-        </div>
-
-
+        
         </div>
     )
 }
