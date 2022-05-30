@@ -328,6 +328,15 @@
     padding: 20px;
 }
 
+/*  KPA */
+.kpa {
+    text-align: center;
+    border: 2px solid yellow;
+}
+.d-review {
+    text-align: left;
+}
+
 /* why hire me */
 .why {
     text-align: center;

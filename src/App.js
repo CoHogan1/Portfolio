@@ -5,6 +5,7 @@ import React, { Component } from 'react'
 import About    from './aboutMe.js'
 import Skills from './skills.js'
 import Review from './review.js'
+import Kpa from './KPA.js'
 import Why from './why.js'
 import Projects from './projects.js'
 import Contact from './contactMe.js'
@@ -13,7 +14,7 @@ class App extends Component{
     constructor(props){
         super(props)
         this.state = {
-            arr: ['About','Skills','Projects','Review','Why?','Contact'],
+            arr: ['About','Skills','Projects','Review','Kpa','Why?','Contact'],
             view: 0,
         }
     }
@@ -44,8 +45,9 @@ class App extends Component{
         {this.state.view === 1 ? <Skills />   : null}
         {this.state.view === 2 ? <Projects /> : null}
         {this.state.view === 3 ? <Review />   : null}
-        {this.state.view === 4 ? <Why />      : null}
-        {this.state.view === 5 ? <Contact />  : null}
+        {this.state.view === 4 ? <Kpa />      : null}
+        {this.state.view === 5 ? <Why />      : null}
+        {this.state.view === 6 ? <Contact />  : null}
 
         {/*  <About/>    */}
         {/* <Skills />   */}
