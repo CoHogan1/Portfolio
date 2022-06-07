@@ -43,7 +43,7 @@ class App extends Component{
     <div className="App">
         <div className="navbar">
 
-            <h3 className="small">Conner's Portfolio</h3>
+            <h3 className={this.state.value ? "hide": "small"}>Conner's Portfolio</h3>
 
             <div className={this.state.value ? "nav-menu-active": "nav-menu"}>
                     {this.state.arr.map((v,i) => {
