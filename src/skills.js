@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from 'react'
+import { useState } from "react";
 
 // skill icons.
 import css      from './images/css-logo.png'
@@ -73,6 +73,7 @@ function App(){
 
         </div>
     )
+
 }
 
 export default App;

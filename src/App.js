@@ -17,6 +17,7 @@ class App extends Component{
             arr: ['About','Skills','Projects','Review','DISC','Why?','Contact'],
             view: 0,
             value: false,
+            myRef: React.createRef(),
         }
     }
 
@@ -34,26 +35,30 @@ class App extends Component{
         })
     }
 
+
+
+
     render(){
         return (
     <div className="App">
-
         <div className="navbar">
-        <div className={this.state.value ? "nav-menu-active": "nav-menu"}>
-                {this.state.arr.map((v,i) => {
-                    return <p  className="nav-item" onClick={()=> this.setView(i)} key={i+v} >{v}</p>
-                })}
-                <div className={this.state.value ? 'ham-after' : "ham"} onClick={this.toggle}>
-                    <span className="meat"></span>
-                    <span className="meat"></span>
-                    <span className="meat"></span>
-                </div>
+
+            <h3 className="small">Conner's Portfolio</h3>
+
+            <div className={this.state.value ? "nav-menu-active": "nav-menu"}>
+                    {this.state.arr.map((v,i) => {
+                        return <p  className="nav-item" onClick={()=> this.setView(i)} key={i+v} >{v}</p>
+                    })}
+                    <div className={this.state.value ? 'ham-after' : "ham"} onClick={this.toggle}>
+                        <span className="meat"></span>
+                        <span className="meat"></span>
+                        <span className="meat"></span>
+                    </div>
+            </div>
+
         </div>
 
-
-        </div>
-
-        {this.state.view === 0 ? <About />    : null}
+        {this.state.view === 0 ? <About  />    : null}
         {this.state.view === 1 ? <Skills />   : null}
         {this.state.view === 2 ? <Projects /> : null}
         {this.state.view === 3 ? <Review />   : null}
@@ -66,7 +71,3 @@ class App extends Component{
     }
 }
 export default App;
-
-
-
-// <div className={this.state.value ? "navbar-active": "navbar"}>
